@@ -1,0 +1,293 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 26px;
+	font-weight: normal;
+	height: 2765px;
+}
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.page-header {
+	height: 56px;
+	background-color: #fff;
+}
+
+.top-menu {
+	list-style: none;
+	padding: 18px;
+	margin: 0;
+	position: relative;
+
+	&__item {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 4%;
+		margin-right: 9%;
+		font-weight: bold;
+	
+		&:nth-child(3) {
+			margin-left: 23%;
+		}
+	
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&-link {
+			color: black;
+			text-decoration: none;
+		}
+	}
+
+	&__logo-link {
+		position: absolute;
+		margin-left: 1200px / 2 - 138 / 2;
+	}
+}
+
+.welcome {
+	height: 722px;
+	width: 100%;
+	background: #fff url(../img/bg-welcome.jpg) no-repeat 0 -56px;
+	padding-top: 20px;
+
+	&__img {
+		display: block;
+		margin: 0 auto;
+		padding-top: 56px;
+	}
+
+	&__info {
+		width: 500px;
+		margin: 0 auto;
+		margin-top: 140px;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	&__reasons {
+		color: #333;
+		text-align: center;
+	}
+}
+
+.features {
+	height: 1090px;
+	background-color: #fff;
+
+	&-item {
+		height: 255px;
+		background-color: green;
+
+		&-container {
+			background-color: #81b3d2;
+			width: 280px;
+			padding: 49px 60px;
+			text-align: center;
+			float: left;
+			color: white;
+		}
+
+		&__title {
+			padding: 0;
+			font-size: 1.5em;
+			font-weight: bold;
+			width: 160px;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		&__number {
+			line-height: 21px;
+		}
+
+		&__description {
+			line-height: 21px;
+		}
+
+		&--image-left {
+			.features-item-container {
+				float: right;
+			}
+		}
+
+		&-small-container {
+			max-height: 255px;
+			padding: 20px;
+			background-color: #eee;
+		}
+
+		&--small {
+			display: inline-block;
+			max-width: 25%;
+			vertical-align: top;
+			padding: 40px;
+			margin-left: 10px;
+			text-align: center;
+		}
+	}
+}
+
+.advantages {
+	height: 260px;
+	margin: 20px 0;
+	padding: 10px;
+
+	&__item {
+		display: inline-block;
+		max-width: 300px;
+		max-height: 200px;
+		background-color: #fff;
+		text-align: center;
+		padding: 30px 45px;
+		vertical-align: middle;
+
+		&-title {
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		&-description {
+			line-height: 21px;
+		}
+	}
+}
+
+.visit-us {
+	height: 765px;
+	padding: 40px;
+
+	&__title {
+		text-align: center;
+		font-size: 2.14em;
+		font-weight: bold;
+	}
+
+	&__info {
+		width: 400px;
+		text-align: center;
+		margin: 0 auto;
+		line-height: 24px;
+	}
+}
+
+.hotel-search {
+	height: 700px;
+	margin-top: 50px;
+
+	&__header {
+		width: 535px;
+		height: 55px;
+		padding: 15px;
+		margin: 0 auto;
+		background-color: #766357;
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	&__form {
+		width: 455px;
+		height: 365px;
+		margin: 0 auto;
+		padding: 55px;
+		outline: 1px solid black;
+
+		&-label {
+			font-weight: bold;
+			padding: 15px;
+		}
+
+		&-input {
+			height: 35px;
+			margin-bottom: 40px;
+			background-color: #f2f2f2;
+
+			&first-child {
+				background-color: red;
+			}
+		}
+
+		&-submit {
+			background-color: #81b3d2;
+			border: 0;
+			color: #fff;
+			font-size: 1.5em;
+			font-weight: bold;
+			width: 455px;
+			height: 60px;
+		}
+	}
+}
+
+.page-footer {
+	height: 70px;
+	padding: 35px 20px;
+	background-color: rgba(0,0,0,0.1);
+
+	.twitter-tag {
+		display: inline-block;
+		width: 15%;
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: bold;
+		margin-left: 100px;
+		vertical-align: middle;
+	}
+
+	.social-icons {
+		display: inline-block;
+		width: 150px;
+		margin-left: 22%;
+		vertical-align: middle;
+
+		&__item-link-img {
+			display: inline-block;
+			background: #81b3d2 url(../img/spr-social-icons.png) no-repeat -20% 50%;
+			width: 45px;
+			height: 45px;
+			vertical-align: bottom;
+
+			&:nth-child(2) {
+				background-color: #fff;
+			}
+
+			&:nth-child(3) {
+				background-position: 100px 0;
+			}
+		}
+	}
+
+	.copyright {
+		display: inline-block;
+		vertical-align: middle;
+		width: 18%;
+		margin-left: 15%;
+
+		&__by-img {
+			display: inline-block;
+			height: 31px;
+			width: 30px;
+			background: url(../img/spr-copyright-icons.png) no-repeat 0 0;
+			margin-top: 15px;
+			vertical-align: bottom;
+		}
+
+		&__for-img {
+			display: inline-block;
+			height: 32px;
+			width: 30px;
+			background: url(../img/spr-copyright-icons.png) no-repeat -75px 0;
+			vertical-align: bottom;
+		}
+	}
+}
