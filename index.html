@@ -11,15 +11,17 @@
 	<div class="wrapper">
 		<header class="page-header">
 			<nav class="top-menu-nav">
-				<a class="top-menu__logo-link" href="#">
-					<img class="top-menu__logo" src="img/icon-top-menu.png" height="70" width="138" alt="logo">
-				</a>
 				<ul class="top-menu">
 					<li class="top-menu__item">
 						<a  class="top-menu__item-link" href="#">Информация</a>
 					</li>
 					<li class="top-menu__item">
 						<a  class="top-menu__item-link" href="#">Фото и видео</a>
+					</li>
+					<li class="top-menu__item">
+						<a class="top-menu__logo-link" href="#">
+							<img class="top-menu__logo" src="img/icon-top-menu.png" height="70" width="138" alt="logo">
+						</a>
 					</li>
 					<li class="top-menu__item">
 						<a  class="top-menu__item-link" href="#">Карта штата</a>
@@ -32,10 +34,12 @@
 		</header>
 		<div class="welcome">
 			<img class="welcome__img" src="img/text-welcome-1.png" height="86" width="256" alt="welcome-1">
-			<img class="welcome__img" src="img/text-welcome-2.png" height="78" width="458" alt="welcome-2">
+			<h1 class="welcome__text">SEDONA</h1>
 			<img class="welcome__img" src="img/text-welcome-3.png" height="80" width="295" alt="welcome-3">
-			<h3 class="welcome__info">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-			<p class="welcome__reasons">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+			<div class="welcome-container">
+				<h3 class="welcome__info">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+				<p class="welcome__reasons">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+			</div>
 		</div>
 		<div class="features">
 			<section class="features-item">
@@ -97,14 +101,20 @@
 					<p class="hotel-search__header-title">Поиск гостиницы в Седоне</p>
 				</header>
 				<form class="hotel-search__form" action="#">
-					<label class="hotel-search__form-label" for="dateIn">Дата заезда:</label>
-					<input class="hotel-search__form-input hotel-search__form-input--date" type="date" name="dateIn" value=""><br>
-					<label class="hotel-search__form-label" for="dateOut">Дата выезда:</label>
-					<input class="hotel-search__form-input hotel-search__form-input--date" type="date" name="dateOut"><br>
-					<label class="hotel-search__form-label" for="adultNumber">Взрослые:</label>
-					<input class="hotel-search__form-input hotel-search__form-input--number" type="number" name="adultNumber">
-					<label class="hotel-search__form-label" for="childrenNumber">Дети:</label>
-					<input class="hotel-search__form-input hotel-search__form-input--number" type="number" name="childrenNumber"><br>
+					<div class="hotel-search__form-field">
+						<label class="hotel-search__form-field-label" for="dateIn">Дата заезда:</label>
+						<input class="hotel-search__form-field-input hotel-search__form-field-input--date" type="date" name="dateIn" value="">
+					</div>
+					<div class="hotel-search__form-field">
+						<label class="hotel-search__form-field-label" for="dateOut">Дата выезда:</label>
+						<input class="hotel-search__form-field-input hotel-search__form-field-input--date" type="date" name="dateOut">
+					</div>
+					<div class="hotel-search__form-field">
+						<label class="hotel-search__form-field-label" for="adultNumber">Взрослые:</label>
+						<input class="hotel-search__form-field-input hotel-search__form-field-input--number" type="number" name="adultNumber">
+						<label class="hotel-search__form-field-label" for="childrenNumber">Дети:</label>
+						<input class="hotel-search__form-field-input hotel-search__form-field-input--number" type="number" name="childrenNumber">
+					</div>
 					<input class="hotel-search__form-submit" type="submit" value="Найти">
 				</form>
 			</div>
