@@ -13,10 +13,10 @@
 			<nav class="top-menu-nav">
 				<ul class="top-menu">
 					<li class="top-menu__item">
-						<a  class="top-menu__item-link" href="#">Информация</a>
+						<a class="top-menu__item-link" href="#">Информация</a>
 					</li>
 					<li class="top-menu__item">
-						<a  class="top-menu__item-link" href="#">Фото и видео</a>
+						<a class="top-menu__item-link" href="#">Фото и видео</a>
 					</li>
 					<li class="top-menu__item">
 						<a class="top-menu__logo-link" href="#">
@@ -24,17 +24,17 @@
 						</a>
 					</li>
 					<li class="top-menu__item">
-						<a  class="top-menu__item-link" href="#">Карта штата</a>
+						<a class="top-menu__item-link" href="#">Карта штата</a>
 					</li>
 					<li class="top-menu__item">
-						<a  class="top-menu__item-link" href="#">Гостиницы</a>
+						<a class="top-menu__item-link" href="#">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<div class="welcome">
 			<img class="welcome__img" src="img/text-welcome-1.png" height="86" width="256" alt="welcome-1">
-			<h1 class="welcome__text">SEDONA</h1>
+			<img class="welcome__img" src="img/text-welcome-2.png" height="78" width="458" alt="welcome-2">
 			<img class="welcome__img" src="img/text-welcome-3.png" height="80" width="295" alt="welcome-3">
 			<div class="welcome-container">
 				<h3 class="welcome__info">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
@@ -111,9 +111,17 @@
 					</div>
 					<div class="hotel-search__form-field">
 						<label class="hotel-search__form-field-label" for="adultNumber">Взрослые:</label>
-						<input class="hotel-search__form-field-input hotel-search__form-field-input--number" type="number" name="adultNumber">
+						<div class="hotel-search__form-field-input--number-container">
+							<span class="hotel-search__form-field-input--number-container-minus"></span>
+							<input class="hotel-search__form-field-input hotel-search__form-field-input--number" type="number" name="adultNumber">
+							<span class="hotel-search__form-field-input--number-container-plus"></span>
+						</div>
 						<label class="hotel-search__form-field-label" for="childrenNumber">Дети:</label>
-						<input class="hotel-search__form-field-input hotel-search__form-field-input--number" type="number" name="childrenNumber">
+						<div class="hotel-search__form-field-input--number-container">
+							<span class="hotel-search__form-field-input--number-container-minus"></span>
+							<input class="hotel-search__form-field-input hotel-search__form-field-input--number" type="number" name="childrenNumber">
+							<span class="hotel-search__form-field-input--number-container-plus"></span>
+						</div>
 					</div>
 					<input class="hotel-search__form-submit" type="submit" value="Найти">
 				</form>
