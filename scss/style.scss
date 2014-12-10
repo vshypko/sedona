@@ -22,7 +22,7 @@ body {
 }
 
 .wrapper {
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -32,36 +32,37 @@ body {
 }
 
 .top-menu {
+	font-size: 0;
 	position: relative;
-	margin: 0;
 	list-style: none;
+	min-height: 50px;
+	padding: 1.3% 0;
 	&__item {
+		font-size: 14px;
 		display: inline-block;
-		margin-right: 115px;
-		padding: 15px;
+		width: 20%;
+		box-sizing: border-box;
+		margin: 0;
 		font-weight: bold;
-		vertical-align: top;
-		&:last-child {
-			margin-right: 0;
-		}
+		vertical-align: bottom;
+		text-align: center;
 		&-link {
 			color: $top-menu-link-color;
 			text-decoration: none;
 		}
 	}
 	&__logo-link {
-		display: inline-block;
-		margin-top: -15px;
-		padding-bottom: -40px;
+		position: absolute;
+		top: 0;
+		left: 44.2%;
 	}
 }
 
 .welcome {
 	position: relative;
 	z-index: -1;
-	width: 100%;
-	background: $page-header-bg url("../img/bg-welcome.jpg") no-repeat 0 -56px;
-	background-color: yellow;
+	max-width: 100%;
+	background: $page-header-bg url("../img/bg-welcome.jpg") no-repeat 50% -56px;
 	&__img {
 		display: block;
 		margin: 0 auto;
@@ -81,7 +82,7 @@ body {
 	}
 	&-container {
 		position: relative;
-		width: 100%;
+		max-width: 100%;
 		height: 200px;
 		margin-top: 85px;
 		padding-top: 10px;
@@ -92,7 +93,7 @@ body {
 			left: 0;
 			width: 100%;
 			height: 70px;
-			background: url("../img/bg-welcome-mask.png") no-repeat 0 0;
+			background: url("../img/bg-welcome-mask.png") no-repeat 50% 0;
 			content: "";
 		}
 	}
@@ -101,14 +102,16 @@ body {
 .features {
 	background-color: $page-header-bg;
 	&-item {
-		height: 255px;
+		min-height: 256px;
 		&-container {
+			min-height: 256px;
 			float: left;
-			width: 280px;
+			width: 33%;
 			padding: 4% 5%;
 			color: $page-header-bg;
 			text-align: center;
 			background-color: $features-container-bg-color;
+			box-sizing: border-box;
 		}
 		&__title {
 			width: 152px;
@@ -126,28 +129,38 @@ body {
 			line-height: $line-height-small;
 			padding: 3% 8%;
 		}
+		&__img {
+			&-container {
+				float: right;
+				width: 67%;
+			}
+			width: 100%;
+			box-sizing: border-box;
+		}
 		&--image-left {
 			.features-item-container {
 				float: right;
 			}
 		}
 		&-small-container {
-			max-height: 255px;
-			padding: 2% 8%;
 			background-color: $features-small-container-bg-color;
+			font-size: 0;
+			min-height: 250px;
+			margin: 0;
 		}
 		&-small {
+			min-height: 250px;
+			padding: 3%;
+			width: 33.333%;
 			display: inline-block;
-			padding: 3% 1%;
+			font-size: 14px;
 			text-align: center;
-			vertical-align: top;
-			&:nth-child(2) {
-				margin: 0 70px;
-			}
+			vertical-align: middle;
+			box-sizing: border-box;
 			&__title {
-				width: 160px;
+				max-width: 45%;
 				margin: 0 auto;
-				padding: 0;
+				padding: 2%;
 				font-size: 1.5em;
 				font-weight: bold;
 				text-align: center;
@@ -157,9 +170,9 @@ body {
 				padding: 3%;
 			}
 			&__description {
-				width: 250px;
 				padding: 3%;
 				line-height: $line-height-small;
+				max-width: 100%;
 			}
 		}
 	}
@@ -183,7 +196,7 @@ body {
 			padding: 4%;
 		}
 		&-description {
-			width: 290px;
+			max-width: 80%;
 			margin: 0 auto;
 			line-height: $line-height-small;
 			text-align: center;
@@ -192,8 +205,6 @@ body {
 }
 
 .visit-us {
-	width: 100%;
-	margin-left: -40px;
 	padding: 3%;
 	padding-bottom: 10%;
 	&__title {
@@ -203,7 +214,7 @@ body {
 		padding: 2%;
 	}
 	&__info {
-		width: 33.3333%;
+		width: 45%;
 		margin: 0 auto;
 		padding: 0 3%;
 		line-height: 24px;
@@ -212,19 +223,18 @@ body {
 }
 
 .hotel-search {
-	&-container {
-		position: relative;
-		width: 1200px;
-		height: 600px;
-		background: url("../img/bg-visit-us-map.jpg") no-repeat 0 0;
-		background-color: blue;
-	}
 	position: absolute;
-	top: -118px;
-	left: 0;
+	top: -122px;
+	left: 1%;
 	width: 100%;
 	height: 100%;
 	margin-top: 48px;
+	&-container {
+		position: relative;
+		width: 100%;
+		height: 600px;
+		background: url("../img/bg-visit-us-map.jpg") no-repeat 50% 50%;
+	}
 	&__header {
 		width: 44%;
 		height: 60px;
@@ -240,19 +250,21 @@ body {
 		}
 	}
 	&__form {
-		width: 37.3%;
+		max-width: 37.3%;
 		height: 46%;
 		margin: 0 auto;
 		padding: 5%;
 		background-color: $page-header-bg;
 		box-shadow: 1px 1px 1px $reasons-font-color;
 		&-field {
+			max-width: 100%;
 			margin-bottom: 40px;
 			&-label {
 				padding: 3%;
 				font-weight: bold;
 			}
 			&-input {
+				width: 60%;
 				position: relative;
 				height: 38px;
 				font-size: 1em;
@@ -280,21 +292,21 @@ body {
 					width: 31%;
 					height: 35px;
 					&-container {
-						width: 24.3%;
 						display: inline-block;
+						width: 24.3%;
 						margin-left: 10px;
 						&-minus {
-							padding: 21% 9.4% 2.5%;
+							float: left;
 							width: 11px;
 							height: 11px;
-							float: left;
+							padding: 21% 9.4% 2.5%;
 							background: $hotel-search-form-input-color url("../img/icon-hotel-search-form-minus.png") 50% 50% no-repeat;
 						}
 						&-plus {
-							padding: 21% 9.4% 2.5%;
+							float: right;
 							width: 11px;
 							height: 11px;
-							float: right;
+							padding: 21% 9.4% 2.5%;
 							background: $hotel-search-form-input-color url("../img/icon-hotel-search-form-plus.png") 50% 50% no-repeat;
 						}
 					}
@@ -328,27 +340,29 @@ body {
 }
 
 .page-footer {
+	font-size: 0;
 	position: absolute;
-	top: 2640px;
+	bottom: 0;
 	left: 0;
+	min-width: 650px;
 	width: 100%;
-	height: 5%;
+	box-sizing: border-box;
 	padding: 3% 2%;
 	background-color: $page-footer-bg-color;
 	.twitter-tag {
+		font-size: 21px;
 		display: inline-block;
-		width: 15%;
-		margin-left: 200px;
-		font-size: 1.5em;
+		width: 33%;
 		font-weight: bold;
 		text-align: center;
-		vertical-align: middle;
+		vertical-align: bottom;
 	}
 	.social-icons {
+		font-size: 14px;
 		display: inline-block;
-		width: 15%;
-		margin-left: 200px;
-		vertical-align: middle;
+		width: 33%;
+		text-align: center;
+		vertical-align: bottom;
 		&__item-link-img {
 			display: inline-block;
 			width: 45px;
@@ -364,9 +378,11 @@ body {
 		}
 	}
 	.copyright {
+		font-size: 14px;
 		display: inline-block;
-		width: 15%;
-		margin-left: 200px;
+		min-width: 190px;
+		width: 33%;
+		text-align: center;
 		vertical-align: middle;
 		&__by-img {
 			display: inline-block;
