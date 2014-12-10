@@ -1,3 +1,7 @@
+@import "_reset.scss";
+@import "_normalize.scss";
+
+
 $page-header-bg: #fff;
 $top-menu-link-color: #000;
 $reasons-font-color: #333;
@@ -115,24 +119,26 @@ body {
 		&-container {
 			float: left;
 			width: 280px;
-			padding: 49px 60px;
+			padding: 4% 5%;
 			color: $page-header-bg;
 			text-align: center;
 			background-color: $features-container-bg-color;
 		}
 		&__title {
-			width: 160px;
+			width: 152px;
 			margin: 0 auto;
-			padding: 0;
+			padding: 2%;
 			font-size: 1.5em;
 			font-weight: bold;
 			text-align: center;
 		}
 		&__number {
 			line-height: $line-height-small;
+			padding: 3%;
 		}
 		&__description {
 			line-height: $line-height-small;
+			padding: 3% 8%;
 		}
 		&--image-left {
 			.features-item-container {
@@ -141,16 +147,16 @@ body {
 		}
 		&-small-container {
 			max-height: 255px;
-			padding: 25px;
+			padding: 2% 8%;
 			background-color: $features-small-container-bg-color;
 		}
 		&-small {
 			display: inline-block;
-			padding: 40px;
+			padding: 3% 1%;
 			text-align: center;
 			vertical-align: top;
 			&:nth-child(2) {
-				margin: 0 30px;
+				margin: 0 70px;
 			}
 			&__title {
 				width: 160px;
@@ -162,9 +168,11 @@ body {
 			}
 			&__number {
 				line-height: $line-height-small;
+				padding: 3%;
 			}
 			&__description {
-				width: 280px;
+				width: 250px;
+				padding: 3%;
 				line-height: $line-height-small;
 			}
 		}
@@ -173,19 +181,21 @@ body {
 
 .advantages {
 	height: 260px;
-	margin: 20px 0;
+	margin: 35px 0;
 	&__item {
 		display: inline-block;
 		width: 33.3333%;
 		min-height: 200px;
 		margin: -2px;
 		padding: 30px 0;
+		background-color: red;
 		text-align: center;
 		vertical-align: middle;
 		background-color: $page-header-bg;
 		&-title {
 			font-size: 1.5em;
 			font-weight: bold;
+			padding: 4%;
 		}
 		&-description {
 			width: 290px;
@@ -206,10 +216,12 @@ body {
 		font-size: 2.14em;
 		font-weight: bold;
 		text-align: center;
+		padding: 2%;
 	}
 	&__info {
-		width: 400px;
+		width: 33.3333%;
 		margin: 0 auto;
+		padding: 0 3%;
 		line-height: 24px;
 		text-align: center;
 	}
@@ -217,29 +229,32 @@ body {
 
 .hotel-search {
 	height: 595px;
-	margin-top: 50px;
+	margin-top: 48px;
 	&__header {
-		width: 500px;
+		width: 44%;
 		height: 60px;
 		margin: 0 auto;
-		padding: 10px 20px;
+		padding: 1% 1.7%;
 		font-size: 1.5em;
 		font-weight: bold;
 		color: $page-header-bg;
 		text-align: center;
 		background-color: $hotel-search-bg-color;
+		&-title {
+			padding: 4%;
+		}
 	}
 	&__form {
-		width: 440px;
-		height: 280px;
+		width: 37.3%;
+		height: 46%;
 		margin: 0 auto;
-		padding: 50px;
+		padding: 5%;
 		background-color: $page-header-bg;
-		box-shadow: 1px 1px 2px $reasons-font-color;
+		box-shadow: 1px 1px 1px $reasons-font-color;
 		&-field {
 			margin-bottom: 40px;
 			&-label {
-				padding: 15px;
+				padding: 3%;
 				font-weight: bold;
 			}
 			&-input {
@@ -252,8 +267,8 @@ body {
 				border: none;
 				&--date {
 					float: right;
-					width: 290px;
-					padding: 0 10px;
+					width: 65%;
+					padding: 0 1%;
 					text-align: left;
 					&:after {
 						position: absolute;
@@ -267,21 +282,21 @@ body {
 					}
 				}
 				&--number {
-					width: 35px;
+					width: 31%;
 					height: 35px;
 					&-container {
-						width: 113px;
+						width: 24.3%;
 						display: inline-block;
-						margin-left: 5px;
+						margin-left: 10px;
 						&-minus {
-							padding: 25px 11px 1px;
+							padding: 21% 9.4% 2.5%;
 							width: 11px;
 							height: 11px;
 							float: left;
 							background: $hotel-search-form-input-color url("../img/icon-hotel-search-form-minus.png") 50% 50% no-repeat;
 						}
 						&-plus {
-							padding: 25px 11px 1px;
+							padding: 21% 9.4% 2.5%;
 							width: 11px;
 							height: 11px;
 							float: right;
@@ -293,20 +308,20 @@ body {
 			&:nth-child(3) {
 				label {
 					&:first-child {
-						margin-right: 17px;
+						margin-right: 30px;
 					}
 					&:nth-child(3) {
 						margin-right: 5px;
 					}
 				}
 				input {
-					padding-left: 11px;
+					padding-left: 10%;
 				}
 			}
 		}
 		&-submit {
-			width: 440px;
-			height: 60px;
+			width: 100%;
+			height: 25%;
 			font-size: 1.5em;
 			font-weight: bold;
 			color: $page-header-bg;
@@ -318,10 +333,10 @@ body {
 }
 
 .page-footer {
-	width: 1160px;
-	height: 40px;
-	margin-top: -50px;
-	padding: 45px 20px;
+	width: 100%;
+	height: 4%;
+	padding: 4% 2%;
+	margin-top: -40px;
 	background-color: $page-footer-bg-color;
 	.twitter-tag {
 		display: inline-block;
@@ -334,7 +349,7 @@ body {
 	}
 	.social-icons {
 		display: inline-block;
-		width: 150px;
+		width: 15%;
 		margin-left: 210px;
 		vertical-align: middle;
 		&__item-link-img {
@@ -353,7 +368,7 @@ body {
 	}
 	.copyright {
 		display: inline-block;
-		width: 18%;
+		width: 15%;
 		margin-left: 220px;
 		vertical-align: middle;
 		&__by-img {
