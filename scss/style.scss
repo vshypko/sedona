@@ -14,8 +14,6 @@ $line-height-small: 1.5em;
 
 body {
 	height: 2765px;
-	margin: 0;
-	padding: 0;
 	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
 	font-weight: normal;
@@ -62,33 +60,22 @@ body {
 	position: relative;
 	z-index: -1;
 	width: 100%;
-	height: 700px;
-	padding-top: 20px;
 	background: $page-header-bg url("../img/bg-welcome.jpg") no-repeat 0 -56px;
+	background-color: yellow;
 	&__img {
 		display: block;
 		margin: 0 auto;
 		padding-top: 60px;
 	}
-	&__text {
-		margin: 0;
-		margin-top: 90px;
-		padding: 0;
-		font-size: 7em;
-		font-weight: 700;
-		color: $page-header-bg;
-		text-align: center;
-		letter-spacing: .2em;
-	}
 	&__info {
 		width: 500px;
 		margin: 0 auto;
-		margin-top: 30px;
+		padding: 2% 0;
 		font-size: 1.5em;
 		text-align: center;
 	}
 	&__reasons {
-		margin-top: 40px;
+		padding: 1%;
 		color: $reasons-font-color;
 		text-align: center;
 	}
@@ -112,7 +99,6 @@ body {
 }
 
 .features {
-	height: 1090px;
 	background-color: $page-header-bg;
 	&-item {
 		height: 255px;
@@ -180,7 +166,7 @@ body {
 }
 
 .advantages {
-	height: 260px;
+	height: 265px;
 	margin: 35px 0;
 	&__item {
 		display: inline-block;
@@ -188,7 +174,6 @@ body {
 		min-height: 200px;
 		margin: -2px;
 		padding: 30px 0;
-		background-color: red;
 		text-align: center;
 		vertical-align: middle;
 		background-color: $page-header-bg;
@@ -208,10 +193,9 @@ body {
 
 .visit-us {
 	width: 100%;
-	height: 815px;
 	margin-left: -40px;
-	padding: 40px;
-	background: url("../img/bg-visit-us-map.jpg") no-repeat 40px 280px;
+	padding: 3%;
+	padding-bottom: 10%;
 	&__title {
 		font-size: 2.14em;
 		font-weight: bold;
@@ -228,7 +212,18 @@ body {
 }
 
 .hotel-search {
-	height: 595px;
+	&-container {
+		position: relative;
+		width: 1200px;
+		height: 600px;
+		background: url("../img/bg-visit-us-map.jpg") no-repeat 0 0;
+		background-color: blue;
+	}
+	position: absolute;
+	top: -118px;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	margin-top: 48px;
 	&__header {
 		width: 44%;
@@ -267,7 +262,7 @@ body {
 				border: none;
 				&--date {
 					float: right;
-					width: 65%;
+					width: 66%;
 					padding: 0 1%;
 					text-align: left;
 					&:after {
@@ -321,7 +316,7 @@ body {
 		}
 		&-submit {
 			width: 100%;
-			height: 25%;
+			height: 22%;
 			font-size: 1.5em;
 			font-weight: bold;
 			color: $page-header-bg;
@@ -333,15 +328,17 @@ body {
 }
 
 .page-footer {
+	position: absolute;
+	top: 2640px;
+	left: 0;
 	width: 100%;
-	height: 4%;
-	padding: 4% 2%;
-	margin-top: -40px;
+	height: 5%;
+	padding: 3% 2%;
 	background-color: $page-footer-bg-color;
 	.twitter-tag {
 		display: inline-block;
 		width: 15%;
-		margin-left: 120px;
+		margin-left: 200px;
 		font-size: 1.5em;
 		font-weight: bold;
 		text-align: center;
@@ -350,7 +347,7 @@ body {
 	.social-icons {
 		display: inline-block;
 		width: 15%;
-		margin-left: 210px;
+		margin-left: 200px;
 		vertical-align: middle;
 		&__item-link-img {
 			display: inline-block;
@@ -369,7 +366,7 @@ body {
 	.copyright {
 		display: inline-block;
 		width: 15%;
-		margin-left: 220px;
+		margin-left: 200px;
 		vertical-align: middle;
 		&__by-img {
 			display: inline-block;
