@@ -1,6 +1,5 @@
-@import "_reset.scss";
-@import "_normalize.scss";
-
+@import "_reset";
+@import "_normalize";
 
 $page-header-bg: #fff;
 $top-menu-link-color: #000;
@@ -13,7 +12,6 @@ $hotel-search-form-input-color: #f2f2f2;
 $line-height-small: 1.5em;
 
 body {
-	height: 2765px;
 	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
 	font-weight: normal;
@@ -64,19 +62,24 @@ body {
 	max-width: 100%;
 	background: $page-header-bg url("../img/bg-welcome.jpg") no-repeat 50% -56px;
 	&__img {
+		max-width: 100%;
 		display: block;
 		margin: 0 auto;
-		padding-top: 60px;
+		padding-top: 55px;
+		&:first-child {
+			padding-top: 75px;
+		}
 	}
 	&__info {
 		width: 500px;
 		margin: 0 auto;
-		padding: 2% 0;
+		padding-top: 7%;
 		font-size: 1.5em;
 		text-align: center;
 	}
 	&__reasons {
 		padding: 1%;
+		padding-top: 3%;
 		color: $reasons-font-color;
 		text-align: center;
 	}
@@ -86,14 +89,14 @@ body {
 		min-height: 200px;
 		margin-top: 85px;
 		padding-top: 10px;
-		background-color: #fff;
+		background-color: $page-header-bg;
 		&:before {
 			position: absolute;
 			top: -56px;
 			left: 0;
 			height: 65px;
-			background: url("../img/bg-welcome-mask.png") no-repeat 0 0;
-			min-width: 100%;
+			background: url("../img/bg-welcome-mask.png") no-repeat 50% 0;
+			width: 100%;
 			content: "";
 		}
 	}
@@ -127,7 +130,7 @@ body {
 		}
 		&__description {
 			line-height: $line-height-small;
-			padding: 3% 8%;
+			padding: 3%;
 		}
 		&__img {
 			&-container {
@@ -150,7 +153,7 @@ body {
 		}
 		&-small {
 			min-height: 250px;
-			padding: 3%;
+			padding: 3% 2%;
 			width: 33.333%;
 			display: inline-block;
 			font-size: 14px;
@@ -158,7 +161,7 @@ body {
 			vertical-align: middle;
 			box-sizing: border-box;
 			&__title {
-				max-width: 45%;
+				width: 45%;
 				margin: 0 auto;
 				padding: 2%;
 				font-size: 1.5em;
@@ -205,8 +208,9 @@ body {
 }
 
 .visit-us {
-	padding: 3%;
-	padding-bottom: 10%;
+	padding: 1%;
+	padding-top: 25px;
+	padding-bottom: 130px;
 	&__title {
 		font-size: 2.14em;
 		font-weight: bold;
@@ -236,10 +240,10 @@ body {
 		background: url("../img/bg-visit-us-map.jpg") no-repeat 50% 50%;
 	}
 	&__header {
-		width: 44%;
-		height: 60px;
+		max-width: 571px;
+		height: 62px;
 		margin: 0 auto;
-		padding: 1% 1.7%;
+		padding: 1% 0;
 		font-size: 1.5em;
 		font-weight: bold;
 		color: $page-header-bg;
@@ -250,15 +254,15 @@ body {
 		}
 	}
 	&__form {
-		max-width: 37.3%;
-		height: 46%;
+		width: 470px;
+		height: 290px;
 		margin: 0 auto;
-		padding: 5%;
+		padding: 50px;
 		background-color: $page-header-bg;
 		box-shadow: 1px 1px 1px $reasons-font-color;
 		&-field {
 			max-width: 100%;
-			margin-bottom: 40px;
+			margin-bottom: 45px;
 			&-label {
 				padding: 3%;
 				font-weight: bold;
@@ -289,8 +293,8 @@ body {
 					}
 				}
 				&--number {
-					width: 31%;
-					height: 35px;
+					width: 36px;
+					height: 36px;
 					&-container {
 						display: inline-block;
 						width: 24.3%;
@@ -315,20 +319,21 @@ body {
 			&:nth-child(3) {
 				label {
 					&:first-child {
-						margin-right: 30px;
+						margin-right: 36px;
 					}
 					&:nth-child(3) {
-						margin-right: 5px;
+						margin-right: 8px;
 					}
 				}
 				input {
-					padding-left: 10%;
+					width: 47px;
 				}
 			}
 		}
 		&-submit {
 			width: 100%;
-			height: 22%;
+			height: 60px;
+			margin-top: 10px;
 			font-size: 1.5em;
 			font-weight: bold;
 			color: $page-header-bg;
@@ -345,9 +350,10 @@ body {
 	bottom: 0;
 	left: 0;
 	min-width: 650px;
+	min-height: 50px;
 	width: 100%;
 	box-sizing: border-box;
-	padding: 3% 2%;
+	padding: 35px 2%;
 	background-color: $page-footer-bg-color;
 	.twitter-tag {
 		font-size: 21px;
@@ -397,5 +403,45 @@ body {
 
 			@extend .copyright__by-img;
 		}
+	}
+}
+
+@media (max-width: 768px) {
+	.top-menu {
+		padding: 2% 0;
+		box-sizing: border-box;
+		&__item {
+			vertical-align: bottom;
+		}
+		&__logo-link {
+			position: absolute;
+			top: 0;
+			left: 41%;
+		}
+	}
+	.welcome {
+		&-container {
+			&:before {
+				background: url("../img/bg-welcome-mask-tablet.png") no-repeat 50% 0;
+				top: -36px;
+			}
+		}
+	}
+	.advantages {
+		&__item {
+			&-description {
+				width: 65%;
+			}
+		}
+	}
+	.features {
+		&-item {
+			&-small {
+				padding: 5% 0;
+			}
+		}
+	}
+	.visit-us {
+		padding-top: 20px;
 	}
 }
