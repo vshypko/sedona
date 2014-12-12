@@ -9,6 +9,34 @@
 </head>
 <body>
 	<div class="wrapper">
+		<div class="mobile-menu-container">
+			<nav class="mobile-menu-nav">
+				<ul class="mobile-menu">
+					<li class="mobile-menu__item">
+						<a class="mobile-menu__item-link" href="#">Карта штата</a>
+						<button class="mobile-menu__item-close">
+							<svg version="1.0" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.265px"
+								 height="22.262px" viewBox="-0.644 -30.093 22.265 22.262" enable-background="new -0.644 -30.093 22.265 22.262"
+								 xml:space="preserve">
+							<title></title>
+							<polygon fill="#FFFFFF" points="21.62,-10.605 13.263,-18.962 21.619,-27.318 18.845,-30.093 10.488,-21.737 2.132,-30.093 
+								-0.643,-27.318 7.714,-18.962 -0.644,-10.605 2.131,-7.831 10.488,-16.188 18.846,-7.831 "/>
+							</svg>
+						</button>
+					</li>
+					<li class="mobile-menu__item">
+						<a class="mobile-menu__item-link" href="#">Информация</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a class="mobile-menu__item-link" href="#">Фото и видео</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a class="mobile-menu__item-link" href="#">Гостиницы</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 		<header class="page-header">
 			<nav class="top-menu-nav">
 				<ul class="top-menu">
@@ -29,11 +57,25 @@
 					<li class="top-menu__item">
 						<a class="top-menu__item-link" href="#">Гостиницы</a>
 					</li>
+					<li class="top-menu__item top-menu__item-menu-open">
+						<button class="mobile-menu-open">
+							<svg version="1.0" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.264px"
+								 height="22.262px" viewBox="0 0 22.264 22.262" enable-background="new 0 0 22.264 22.262" xml:space="preserve">
+								<title></title>
+								<rect x="0" y="9.169" fill="#81b3d2" width="22.265" height="3.924"/>
+								<title></title>
+								<rect x="0" y="0" fill="#81b3d2" width="22.265" height="3.924"/>
+								<title></title>
+								<rect x="0" y="18.338" fill="#81b3d2" width="22.265" height="3.924"/>
+							</svg>
+						</button>
+					</li>
 				</ul>
 			</nav>
 		</header>
 		<div class="welcome">
-			<img class="welcome__img" src="img/text-welcome-1.png" height="86" width="256" alt="welcome-1">
+			<img class="welcome__img" src="img/text-welcome-1.png" height="86" width="256" alt="">
 			<img class="welcome__img" src="img/text-welcome-2.png" height="78" width="458" alt="welcome-2">
 			<img class="welcome__img" src="img/text-welcome-3.png" height="80" width="295" alt="welcome-3">
 			<div class="welcome-container">
@@ -49,7 +91,7 @@
 					<p class="features-item__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
 				<div class="features-item__img-container">
-					<img class="features-item__img" src="img/bg-features-1.jpg" height="256" width="800" alt="features-1">
+					<img class="features-item__img" src="img/bg-features-1.jpg" height="256" width="800" alt="">
 				</div>
 			</section>
 			<div class="advantages">
@@ -76,7 +118,7 @@
 					<p class="features-item__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 				<div class="features-item__img-container">
-					<img class="features-item__img" src="img/bg-features-2.jpg" height="256" width="800" alt="features-2">
+					<img class="features-item__img" src="img/bg-features-2.jpg" height="256" width="800" alt="">
 				</div>
 			<div class="features-item-small-container">
 				<section class="features-item-small">
@@ -115,17 +157,21 @@
 						<input class="hotel-search__form-field-input hotel-search__form-field-input--date" type="date" name="dateOut">
 					</div>
 					<div class="hotel-search__form-field">
-						<label class="hotel-search__form-field-label" for="adultNumber">Взрослые:</label>
-						<div class="hotel-search__form-field-input--number-container">
-							<span class="hotel-search__form-field-input--number-container-minus"></span>
-							<input class="hotel-search__form-field-input hotel-search__form-field-input--number" type="text" name="adultNumber">
-							<span class="hotel-search__form-field-input--number-container-plus"></span>
+						<div class="hotel-search__form-field-container">
+							<label class="hotel-search__form-field-label" for="adultNumber">Взрослые:</label>
+							<div class="hotel-search__form-field-input--number-container">
+								<span class="hotel-search__form-field-input--number-container-minus"></span>
+								<input class="hotel-search__form-field-input hotel-search__form-field-input--number" type="text" name="adultNumber">
+								<span class="hotel-search__form-field-input--number-container-plus"></span>
+							</div>
 						</div>
-						<label class="hotel-search__form-field-label" for="childrenNumber">Дети:</label>
-						<div class="hotel-search__form-field-input--number-container">
-							<span class="hotel-search__form-field-input--number-container-minus"></span>
-							<input class="hotel-search__form-field-input hotel-search__form-field-input--number" type="text" name="childrenNumber">
-							<span class="hotel-search__form-field-input--number-container-plus"></span>
+						<div class="hotel-search__form-field-container">
+							<label class="hotel-search__form-field-label" for="childrenNumber">Дети:</label>
+							<div class="hotel-search__form-field-input--number-container">
+								<span class="hotel-search__form-field-input--number-container-minus"></span>
+								<input class="hotel-search__form-field-input hotel-search__form-field-input--number" type="text" name="childrenNumber">
+								<span class="hotel-search__form-field-input--number-container-plus"></span>
+							</div>
 						</div>
 					</div>
 					<input class="hotel-search__form-submit" type="submit" value="Найти">
