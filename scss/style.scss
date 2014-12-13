@@ -99,6 +99,7 @@ body {
 		}
 	}
 	&__logo-link {
+		background: url("../img/logo-sedona-1x.png") 50% 0 no-repeat;
 		position: absolute;
 		top: 0;
 		left: 44.2%;
@@ -117,13 +118,14 @@ body {
 		margin: 0 auto;
 		padding-top: 55px;
 		&:first-child {
-			padding-top: 75px;
+			padding-top: 130px;
+			background: url("../img/text-welcome.svg") 50% 70% no-repeat;
 		}
 	}
 	&__info {
 		max-width: 500px;
 		margin: 0 auto;
-		padding-top: 7%;
+		padding-top: 4%;
 		font-size: 1.5em;
 		text-align: center;
 	}
@@ -349,9 +351,8 @@ body {
 						right: 3%;
 						width: 22px;
 						height: 20px;
-						background: url("../img/icon-hotel-search-form-calendar.png") no-repeat 0 0;
+						background: url("../img/icon-calendar.svg") no-repeat 50% 50%;
 						content: "";
-						transform: rotate(-90deg);
 					}
 				}
 				&--number {
@@ -361,20 +362,19 @@ body {
 					&-container {
 						display: inline-block;
 						width: 111px;
-						background-color: red;
 						&-minus {
 							float: left;
 							width: 11px;
 							height: 11px;
 							padding: 24px 10px 3px;
-							background: $hotel-search-form-input-color url("../img/icon-hotel-search-form-minus.png") 50% 50% no-repeat;
+							background: $hotel-search-form-input-color url("../img/icon-minus.svg") 50% 50% no-repeat;
 						}
 						&-plus {
 							float: right;
 							width: 11px;
 							height: 11px;
 							padding: 24px 10px 3px;
-							background: $hotel-search-form-input-color url("../img/icon-hotel-search-form-plus.png") 50% 50% no-repeat;
+							background: $hotel-search-form-input-color url("../img/icon-plus.svg") 50% 50% no-repeat;
 						}
 					}
 				}
@@ -444,12 +444,12 @@ body {
 			width: 45px;
 			height: 45px;
 			vertical-align: bottom;
-			background: $features-container-bg-color url("../img/spr-social-icons.png") no-repeat 15px 50%;
+			background: $features-container-bg-color url("../img/icon-twitter.svg") no-repeat 50% 50%;
 			&--fb {
-				background-position: -40px 50%;
+				background: $features-container-bg-color url("../img/icon-facebook.svg") no-repeat 50% 50%;
 			}
 			&--yt {
-				background-position: -91px 50%;
+				background: $features-container-bg-color url("../img/icon-youtube.svg") no-repeat 50% 50%;
 			}
 			&:hover {
 				background-color: $form-submit-hover-bg-color;
@@ -472,11 +472,10 @@ body {
 			height: 32px;
 			margin-top: 15px;
 			vertical-align: bottom;
-			background: url("../img/spr-copyright-icons.png") no-repeat 0 0;
+			background: url("../img/icon-glukhanko.svg") no-repeat 50% 50%;
 		}
 		&__for-img {
-			background-position: -75px 0;
-
+			background: url("../img/icon-htmlacademy.svg") no-repeat 50% 50%;
 			@extend .copyright__by-img;
 		}
 	}
