@@ -362,7 +362,7 @@ body {
   .mobile-menu-container .mobile-menu__item {
     background-color: #81b3d2;
     padding: 1%;
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid #678fa8;
     text-align: center; }
     .mobile-menu-container .mobile-menu__item-link {
       font-size: 1.29em;
@@ -373,6 +373,11 @@ body {
     .mobile-menu-container .mobile-menu__item-close {
       float: right;
       display: none; }
+    .mobile-menu-container .mobile-menu__item:hover {
+      background-color: #669ec0; }
+    .mobile-menu-container .mobile-menu__item:active {
+      background-color: #5496bd;
+      color: #94b9d2; }
 
 .page-header {
   height: 56px;
@@ -396,6 +401,10 @@ body {
     .top-menu__item-link {
       color: #000;
       text-decoration: none; }
+      .top-menu__item-link:hover {
+        color: #81b3d2; }
+      .top-menu__item-link:active {
+        color: #766357; }
     .top-menu__item-menu-open {
       display: none; }
   .top-menu__logo-link {
@@ -580,7 +589,7 @@ body {
       margin-bottom: 45px; }
       .hotel-search__form-field-container {
         display: inline-block;
-        max-width: 100%;
+        max-width: 99%;
         vertical-align: middle; }
       .hotel-search__form-field-label {
         padding: 3%;
@@ -594,6 +603,11 @@ body {
         text-align: center;
         background-color: #f2f2f2;
         border: none; }
+        .hotel-search__form-field-input:hover {
+          background-color: #ebebeb; }
+        .hotel-search__form-field-input:focus {
+          outline: 2px solid #e5e5e5;
+          background-color: #fff; }
         .hotel-search__form-field-input--date {
           float: right;
           width: 66%;
@@ -644,6 +658,11 @@ body {
       text-transform: uppercase;
       background-color: #81b3d2;
       border: 0; }
+      .hotel-search__form-submit:hover {
+        background-color: #669ec0; }
+      .hotel-search__form-submit:active {
+        background-color: #5496bd;
+        color: #94b9d2; }
 
 .page-footer {
   position: absolute;
@@ -679,6 +698,10 @@ body {
         background-position: -40px 50%; }
       .page-footer .social-icons__item-link-img--yt {
         background-position: -91px 50%; }
+      .page-footer .social-icons__item-link-img:hover {
+        background-color: #669ec0; }
+      .page-footer .social-icons__item-link-img:active {
+        background-color: #5496bd; }
   .page-footer .copyright {
     display: inline-block;
     width: 33%;
@@ -735,6 +758,9 @@ body {
       display: block;
       left: 30%; }
 
+  .mobile-menu-open-img {
+    fill: blue; }
+
   .welcome {
     background: url("../img/bg-welcome.jpg") no-repeat 50% -62px; }
     .welcome-container {
@@ -760,7 +786,7 @@ body {
       font-weight: bold; }
     .welcome__reasons {
       padding: 4% 5%;
-      padding-bottom: 8%; }
+      padding-bottom: 13%; }
 
   .features {
     position: relative; }
@@ -808,12 +834,13 @@ body {
       .features-item-small__description {
         padding: 2%; }
     .features:before {
-      z-index: 1;
+      z-index: -1;
       position: absolute;
-      top: -44px;
+      top: -37px;
       left: 0;
       width: 100%;
-      height: 65px;
+      height: 50px;
+      background: #81b3d2 url("../img/bg-welcome-mask-mobile.png") no-repeat 50% 0;
       content: ""; }
 
   .advantages__item {
@@ -841,8 +868,8 @@ body {
       color: #333; }
 
   .visit-us {
-    padding-top: 20px;
-    padding-bottom: 95px; }
+    padding-top: 30px;
+    min-height: 210px; }
     .visit-us__title {
       font-size: 1.5em;
       padding: 3%; }
