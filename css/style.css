@@ -360,24 +360,24 @@ body {
   display: none;
   width: 100%; }
   .mobile-menu-container .mobile-menu__item {
-    background-color: #81b3d2;
     padding: 1%;
-    border-bottom: 1px solid #678fa8;
-    text-align: center; }
+    text-align: center;
+    background-color: #81b3d2;
+    border-bottom: 1px solid #678fa8; }
     .mobile-menu-container .mobile-menu__item-link {
       font-size: 1.29em;
       line-height: 2.86em;
+      color: #fff;
       text-decoration: none;
-      text-transform: uppercase;
-      color: #fff; }
+      text-transform: uppercase; }
     .mobile-menu-container .mobile-menu__item-close {
-      float: right;
-      display: none; }
+      display: none;
+      float: right; }
     .mobile-menu-container .mobile-menu__item:hover {
       background-color: #669ec0; }
     .mobile-menu-container .mobile-menu__item:active {
-      background-color: #5496bd;
-      color: #94b9d2; }
+      color: #94b9d2;
+      background-color: #5496bd; }
 
 .page-header {
   height: 56px;
@@ -420,9 +420,9 @@ body {
   .welcome__img {
     display: block;
     max-width: 100%;
+    height: auto;
     margin: 0 auto;
-    padding-top: 55px;
-    height: auto; }
+    padding-top: 55px; }
     .welcome__img:first-child {
       padding-top: 75px; }
   .welcome__info {
@@ -538,9 +538,9 @@ body {
       text-align: center; }
 
 .visit-us {
+  min-height: 250px;
   padding: 1%;
-  padding-top: 25px;
-  min-height: 250px; }
+  padding-top: 25px; }
   .visit-us__title {
     padding: 2%;
     font-size: 2.14em;
@@ -606,8 +606,8 @@ body {
         .hotel-search__form-field-input:hover {
           background-color: #ebebeb; }
         .hotel-search__form-field-input:focus {
-          outline: 2px solid #e5e5e5;
-          background-color: #fff; }
+          background-color: #fff;
+          outline: 2px solid #e5e5e5; }
         .hotel-search__form-field-input--date {
           float: right;
           width: 66%;
@@ -630,8 +630,8 @@ body {
           height: 36px; }
           .hotel-search__form-field-input--number-container {
             display: inline-block;
-            background-color: red;
-            width: 111px; }
+            width: 111px;
+            background-color: red; }
             .hotel-search__form-field-input--number-container-minus {
               float: left;
               width: 11px;
@@ -663,8 +663,8 @@ body {
       .hotel-search__form-submit:hover {
         background-color: #669ec0; }
       .hotel-search__form-submit:active {
-        background-color: #5496bd;
-        color: #94b9d2; }
+        color: #94b9d2;
+        background-color: #5496bd; }
 
 .page-footer {
   position: absolute;
@@ -757,8 +757,8 @@ body {
         display: block;
         float: right; }
     .top-menu__logo-link {
-      display: block;
-      left: 30%; }
+      left: 30%;
+      display: block; }
 
   .mobile-menu-open-img {
     fill: blue; }
@@ -784,8 +784,8 @@ body {
       padding: 4% 8%;
       padding-top: 7%;
       font-size: 1.29em;
-      line-height: 1.6em;
-      font-weight: bold; }
+      font-weight: bold;
+      line-height: 1.6em; }
     .welcome__reasons {
       padding: 4% 5%;
       padding-bottom: 13%; }
@@ -793,35 +793,35 @@ body {
   .features {
     position: relative; }
     .features-item__title {
-      font-size: 1.29em;
+      width: 90%;
       padding: 1%;
-      width: 90%; }
+      font-size: 1.29em; }
     .features-item__description {
       padding: 2.5% 2%; }
     .features-item-container {
-      float: none;
       display: block;
+      float: none;
       width: 100%;
       min-height: 200px;
       padding: 10% 2%; }
     .features-item__img-container {
-      overflow: hidden;
       display: none;
-      min-width: 320px;
-      float: none;
       display: block;
-      height: 260px; }
+      float: none;
+      min-width: 320px;
+      height: 260px;
+      overflow: hidden; }
     .features-item__img {
       display: block;
-      margin-left: -30px;
       width: 162%;
-      height: auto; }
+      height: auto;
+      margin-left: -30px; }
     .features-item-small {
       display: block;
       width: 100%;
       min-height: 50px;
-      border-bottom: 1px solid #ddd;
-      padding: 6%; }
+      padding: 6%;
+      border-bottom: 1px solid #ddd; }
       .features-item-small:last-child {
         border: none; }
       .features-item-small-container {
@@ -836,10 +836,10 @@ body {
       .features-item-small__description {
         padding: 2%; }
     .features:before {
-      z-index: -1;
       position: absolute;
       top: -37px;
       left: 0;
+      z-index: -1;
       width: 100%;
       height: 50px;
       background: #81b3d2 url("../img/bg-welcome-mask-mobile.png") no-repeat 50% 0;
@@ -848,41 +848,41 @@ body {
   .advantages__item {
     display: block;
     width: 100%;
-    padding: 3%;
-    min-height: 90px; }
+    min-height: 90px;
+    padding: 3%; }
     .advantages__item-img {
       float: left;
       width: 37px;
       height: 37px;
       padding: 1%; }
     .advantages__item-title {
-      font-size: 1.29em;
       display: inline-block;
       width: 80%;
-      text-align: left;
       padding: 1%;
-      padding-bottom: 2%; }
+      padding-bottom: 2%;
+      font-size: 1.29em;
+      text-align: left; }
     .advantages__item-description {
-      padding: 1%;
-      margin-left: 49px;
       width: 65%;
-      text-align: left;
-      color: #333; }
+      margin-left: 49px;
+      padding: 1%;
+      color: #333;
+      text-align: left; }
 
   .visit-us {
-    padding-top: 30px;
-    min-height: 210px; }
+    min-height: 210px;
+    padding-top: 30px; }
     .visit-us__title {
-      font-size: 1.5em;
-      padding: 3%; }
+      padding: 3%;
+      font-size: 1.5em; }
     .visit-us__info {
-      padding: 2%;
-      width: 90%; }
+      width: 90%;
+      padding: 2%; }
 
   .hotel-search {
+    overflow: hidden;
     margin-left: -3px;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     .hotel-search-container {
       min-height: 1030px;
       background: url("../img/bg-visit-us-map.jpg") no-repeat 50% 102%; }
@@ -893,20 +893,20 @@ body {
         font-size: 18px; }
     .hotel-search__form {
       width: 100%;
-      padding: 3%;
       min-height: 415px;
+      padding: 3%;
       box-shadow: none; }
       .hotel-search__form-field {
         padding: 2% 0; }
         .hotel-search__form-field-label {
-          padding: 2%;
+          display: block;
           margin: 0;
-          display: block; }
+          padding: 2%; }
         .hotel-search__form-field-input {
           float: left;
           width: 93%;
-          padding: 0;
-          margin: 0; }
+          margin: 0;
+          padding: 0; }
           .hotel-search__form-field-input--number {
             min-height: 39px; }
             .hotel-search__form-field-input--number-container {
@@ -922,8 +922,8 @@ body {
           .hotel-search__form-field-container:last-child {
             float: right; }
       .hotel-search__form-submit {
-        margin: 0;
         width: 90%;
+        margin: 0;
         margin: 0 auto; }
 
   .page-footer {
@@ -937,8 +937,8 @@ body {
     .page-footer .social-icons {
       display: block;
       width: 70%;
-      padding: 30px 0;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding: 30px 0; }
     .page-footer .copyright {
       display: block;
       width: 70%;
