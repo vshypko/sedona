@@ -625,22 +625,24 @@ body {
                 -ms-transform: rotate(-90deg);
                     transform: rotate(-90deg); }
         .hotel-search__form-field-input--number {
+          display: inline-block;
           width: 36px;
           height: 36px; }
           .hotel-search__form-field-input--number-container {
             display: inline-block;
-            margin-left: 10px; }
+            background-color: red;
+            width: 111px; }
             .hotel-search__form-field-input--number-container-minus {
               float: left;
               width: 11px;
               height: 11px;
-              padding: 21% 9.4% 2.5%;
+              padding: 24px 10px 3px;
               background: #f2f2f2 url("../img/icon-hotel-search-form-minus.png") 50% 50% no-repeat; }
             .hotel-search__form-field-input--number-container-plus {
               float: right;
               width: 11px;
               height: 11px;
-              padding: 21% 9.4% 2.5%;
+              padding: 24px 10px 3px;
               background: #f2f2f2 url("../img/icon-hotel-search-form-plus.png") 50% 50% no-repeat; }
       .hotel-search__form-field:nth-child(3) label:first-child {
         margin-right: 36px; }

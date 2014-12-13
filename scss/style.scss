@@ -356,23 +356,25 @@ body {
 					}
 				}
 				&--number {
+					display: inline-block;
 					width: 36px;
 					height: 36px;
 					&-container {
 						display: inline-block;
-						margin-left: 10px;
+						background-color: red;
+						width: 111px;
 						&-minus {
 							float: left;
 							width: 11px;
 							height: 11px;
-							padding: 21% 9.4% 2.5%;
+							padding: 24px 10px 3px;
 							background: $hotel-search-form-input-color url("../img/icon-hotel-search-form-minus.png") 50% 50% no-repeat;
 						}
 						&-plus {
 							float: right;
 							width: 11px;
 							height: 11px;
-							padding: 21% 9.4% 2.5%;
+							padding: 24px 10px 3px;
 							background: $hotel-search-form-input-color url("../img/icon-hotel-search-form-plus.png") 50% 50% no-repeat;
 						}
 					}
