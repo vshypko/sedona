@@ -16,6 +16,9 @@ $form-submit-hover-bg-color: #669ec0;
 $form-submit-active-bg-color: #5496bd;
 $form-submit-active-color: #94b9d2;
 $mobile-menu-border-color: #678fa8;
+$copyright-active-color: #bdbbbc;
+$social-icons-svg-active-color: #88b6d1;
+$form-controls-color: #b2b2b2;
 $line-height-small: 1.5em;
 $font-size-basic: 14px;
 
@@ -104,6 +107,9 @@ body {
 		top: 0;
 		left: 44.2%;
 	}
+	&__triangle-svg {
+		fill: $features-container-bg-color;
+	}
 }
 
 .welcome {
@@ -116,10 +122,18 @@ body {
 		max-width: 100%;
 		height: auto;
 		margin: 0 auto;
-		padding-top: 55px;
+		padding-top: 54px;
 		&:first-child {
-			padding-top: 130px;
-			background: url("../img/text-welcome.svg") 50% 70% no-repeat;
+			padding-top: 75px;
+			fill: $features-container-bg-color;
+		}
+		&:nth-child(2) {
+			padding-top: 5px;
+			fill: $hotel-search-bg-color;
+		}
+		&:nth-child(3),
+		&:nth-child(4) {
+			fill: $page-header-bg;
 		}
 	}
 	&__info {
@@ -256,6 +270,9 @@ body {
 			line-height: $line-height-small;
 			text-align: center;
 		}
+		&-svg {
+			fill: $features-container-bg-color;
+		}
 	}
 }
 
@@ -313,16 +330,18 @@ body {
 		background-color: $page-header-bg;
 		box-shadow: 1px 1px 1px $reasons-font-color;
 		&-field {
-			max-width: 100%;
 			margin-bottom: 45px;
 			&-container {
 				display: inline-block;
-				max-width: 99%;
 				vertical-align: middle;
+				width: 233px;
 			}
 			&-label {
-				padding: 3%;
 				font-weight: bold;
+				&--children {
+					margin-left: 25px;
+					font-weight: bold;
+				}
 			}
 			&-input {
 				position: relative;
@@ -341,40 +360,30 @@ body {
 					outline: 2px solid $form-input-border-color;
 				}
 				&--date {
-					float: right;
-					width: 66%;
+					width: 300px;
 					padding: 0 1%;
 					text-align: left;
-					&:after {
-						position: absolute;
-						top: 10px;
-						right: 3%;
-						width: 22px;
-						height: 20px;
-						background: url("../img/icon-calendar.svg") no-repeat 50% 50%;
-						content: "";
-					}
+					float: right;
 				}
 				&--number {
 					display: inline-block;
 					width: 36px;
 					height: 36px;
 					&-container {
-						display: inline-block;
-						width: 111px;
+						float: right;
 						&-minus {
 							float: left;
 							width: 11px;
-							height: 11px;
-							padding: 24px 10px 3px;
-							background: $hotel-search-form-input-color url("../img/icon-minus.svg") 50% 50% no-repeat;
+							height: 31px;
+							padding: 4px 10px 3px;
+							background-color: $hotel-search-form-input-color;
 						}
 						&-plus {
 							float: right;
 							width: 11px;
-							height: 11px;
-							padding: 24px 10px 3px;
-							background: $hotel-search-form-input-color url("../img/icon-plus.svg") 50% 50% no-repeat;
+							height: 28px;
+							padding: 7px 10px 3px;
+							background-color: $hotel-search-form-input-color;
 						}
 					}
 				}
@@ -411,6 +420,24 @@ body {
 				background-color: $form-submit-active-bg-color;
 			}
 		}
+		&-calendar {
+			float: right;
+			width: 13px;
+			height: 28px;
+			padding: 7px 12px 3px 7px;
+			background-color: $hotel-search-form-input-color;
+		}
+		&-minus-svg,
+		&-plus-svg,
+		&-calendar-svg {
+			fill: $form-controls-color;
+			&:hover {
+				fill: $top-menu-link-color;
+			}
+			&:active {
+				fill: $features-container-bg-color;
+			}
+		}
 	}
 }
 
@@ -439,18 +466,19 @@ body {
 		font-size: $font-size-basic;
 		text-align: center;
 		vertical-align: bottom;
+		&__svg {
+			fill: $page-header-bg;
+			&:active {
+				fill: $social-icons-svg-active-color;
+			}
+		}
 		&__item-link-img {
 			display: inline-block;
-			width: 45px;
-			height: 45px;
+			width: 21px;
+			height: 21px;
 			vertical-align: bottom;
-			background: $features-container-bg-color url("../img/icon-twitter.svg") no-repeat 50% 50%;
-			&--fb {
-				background: $features-container-bg-color url("../img/icon-facebook.svg") no-repeat 50% 50%;
-			}
-			&--yt {
-				background: $features-container-bg-color url("../img/icon-youtube.svg") no-repeat 50% 50%;
-			}
+			background-color: $features-container-bg-color;
+			padding: 12px;
 			&:hover {
 				background-color: $form-submit-hover-bg-color;
 			}
@@ -466,16 +494,22 @@ body {
 		font-size: $font-size-basic;
 		text-align: center;
 		vertical-align: middle;
-		&__by-img {
-			display: inline-block;
-			width: 30px;
-			height: 32px;
-			margin-top: 15px;
-			vertical-align: bottom;
-			background: url("../img/icon-glukhanko.svg") no-repeat 50% 50%;
+		&__by {
+			&-img {
+				display: inline-block;
+				width: 30px;
+				height: 32px;
+				margin-top: 15px;
+				vertical-align: bottom;
+			}
+			&:hover {
+				fill: $features-container-bg-color;
+			}
+			&:active {
+				fill: $copyright-active-color;
+			}
 		}
 		&__for-img {
-			background: url("../img/icon-htmlacademy.svg") no-repeat 50% 50%;
 			@extend .copyright__by-img;
 		}
 	}

@@ -412,6 +412,8 @@ body {
     position: absolute;
     top: 0;
     left: 44.2%; }
+  .top-menu__triangle-svg {
+    fill: #81b3d2; }
 
 .welcome {
   position: relative;
@@ -423,10 +425,15 @@ body {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    padding-top: 55px; }
+    padding-top: 54px; }
     .welcome__img:first-child {
-      padding-top: 130px;
-      background: url("../img/text-welcome.svg") 50% 70% no-repeat; }
+      padding-top: 75px;
+      fill: #81b3d2; }
+    .welcome__img:nth-child(2) {
+      padding-top: 5px;
+      fill: #766357; }
+    .welcome__img:nth-child(3), .welcome__img:nth-child(4) {
+      fill: #fff; }
   .welcome__info {
     max-width: 500px;
     margin: 0 auto;
@@ -538,6 +545,8 @@ body {
       margin: 0 auto;
       line-height: 1.5em;
       text-align: center; }
+    .advantages__item-svg {
+      fill: #81b3d2; }
 
 .visit-us {
   min-height: 250px;
@@ -587,15 +596,16 @@ body {
     background-color: #fff;
     box-shadow: 1px 1px 1px #333; }
     .hotel-search__form-field {
-      max-width: 100%;
       margin-bottom: 45px; }
       .hotel-search__form-field-container {
         display: inline-block;
-        max-width: 99%;
-        vertical-align: middle; }
+        vertical-align: middle;
+        width: 233px; }
       .hotel-search__form-field-label {
-        padding: 3%;
         font-weight: bold; }
+        .hotel-search__form-field-label--children {
+          margin-left: 25px;
+          font-weight: bold; }
       .hotel-search__form-field-input {
         position: relative;
         width: 60%;
@@ -611,37 +621,28 @@ body {
           background-color: #fff;
           outline: 2px solid #e5e5e5; }
         .hotel-search__form-field-input--date {
-          float: right;
-          width: 66%;
+          width: 300px;
           padding: 0 1%;
-          text-align: left; }
-          .hotel-search__form-field-input--date:after {
-            position: absolute;
-            top: 10px;
-            right: 3%;
-            width: 22px;
-            height: 20px;
-            background: url("../img/icon-calendar.svg") no-repeat 50% 50%;
-            content: ""; }
+          text-align: left;
+          float: right; }
         .hotel-search__form-field-input--number {
           display: inline-block;
           width: 36px;
           height: 36px; }
           .hotel-search__form-field-input--number-container {
-            display: inline-block;
-            width: 111px; }
+            float: right; }
             .hotel-search__form-field-input--number-container-minus {
               float: left;
               width: 11px;
-              height: 11px;
-              padding: 24px 10px 3px;
-              background: #f2f2f2 url("../img/icon-minus.svg") 50% 50% no-repeat; }
+              height: 31px;
+              padding: 4px 10px 3px;
+              background-color: #f2f2f2; }
             .hotel-search__form-field-input--number-container-plus {
               float: right;
               width: 11px;
-              height: 11px;
-              padding: 24px 10px 3px;
-              background: #f2f2f2 url("../img/icon-plus.svg") 50% 50% no-repeat; }
+              height: 28px;
+              padding: 7px 10px 3px;
+              background-color: #f2f2f2; }
       .hotel-search__form-field:nth-child(3) label:first-child {
         margin-right: 36px; }
       .hotel-search__form-field:nth-child(3) label:nth-child(3) {
@@ -663,6 +664,18 @@ body {
       .hotel-search__form-submit:active {
         color: #94b9d2;
         background-color: #5496bd; }
+    .hotel-search__form-calendar {
+      float: right;
+      width: 13px;
+      height: 28px;
+      padding: 7px 12px 3px 7px;
+      background-color: #f2f2f2; }
+    .hotel-search__form-minus-svg, .hotel-search__form-plus-svg, .hotel-search__form-calendar-svg {
+      fill: #b2b2b2; }
+      .hotel-search__form-minus-svg:hover, .hotel-search__form-plus-svg:hover, .hotel-search__form-calendar-svg:hover {
+        fill: #000; }
+      .hotel-search__form-minus-svg:active, .hotel-search__form-plus-svg:active, .hotel-search__form-calendar-svg:active {
+        fill: #81b3d2; }
 
 .page-footer {
   position: absolute;
@@ -688,16 +701,17 @@ body {
     font-size: 14px;
     text-align: center;
     vertical-align: bottom; }
+    .page-footer .social-icons__svg {
+      fill: #fff; }
+      .page-footer .social-icons__svg:active {
+        fill: #88b6d1; }
     .page-footer .social-icons__item-link-img {
       display: inline-block;
-      width: 45px;
-      height: 45px;
+      width: 21px;
+      height: 21px;
       vertical-align: bottom;
-      background: #81b3d2 url("../img/icon-twitter.svg") no-repeat 50% 50%; }
-      .page-footer .social-icons__item-link-img--fb {
-        background: #81b3d2 url("../img/icon-facebook.svg") no-repeat 50% 50%; }
-      .page-footer .social-icons__item-link-img--yt {
-        background: #81b3d2 url("../img/icon-youtube.svg") no-repeat 50% 50%; }
+      background-color: #81b3d2;
+      padding: 12px; }
       .page-footer .social-icons__item-link-img:hover {
         background-color: #669ec0; }
       .page-footer .social-icons__item-link-img:active {
@@ -714,10 +728,11 @@ body {
       width: 30px;
       height: 32px;
       margin-top: 15px;
-      vertical-align: bottom;
-      background: url("../img/icon-glukhanko.svg") no-repeat 50% 50%; }
-    .page-footer .copyright__for-img {
-      background: url("../img/icon-htmlacademy.svg") no-repeat 50% 50%; }
+      vertical-align: bottom; }
+    .page-footer .copyright__by:hover {
+      fill: #81b3d2; }
+    .page-footer .copyright__by:active {
+      fill: #bdbbbc; }
 
 @media (max-width: 768px) {
   .top-menu {
