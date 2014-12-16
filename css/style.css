@@ -504,8 +504,7 @@ body {
       float: right;
       width: 67%;
       height: 256px;
-      box-sizing: border-box;
-      background: url("../img/bg-features-2.jpg") 0 0 no-repeat; }
+      box-sizing: border-box; }
     .features-item--image-left .features-item-container {
       float: right; }
     .features-item-small-container {
@@ -776,7 +775,7 @@ body {
     padding-top: 20px; }
  }
 
-@media (max-width: 320px) {
+@media (max-width: 460px) {
   .top-menu {
     background-color: #fff; }
     .top-menu__item {
@@ -791,13 +790,15 @@ body {
       display: block; }
 
   .welcome {
+    width: auto;
     background: url("../img/bg-welcome.jpg") no-repeat 50% -62px; }
     .welcome-container {
-      width: 320px;
+      max-width: 460px;
+      min-width: 320px;
       margin-top: 50px; }
       .welcome-container:before {
         top: -36px;
-        background: url("../img/bg-welcome-mask-tablet.png") no-repeat -220px 0; }
+        background: url("../img/bg-welcome-mask-tablet.png") no-repeat 50% 0; }
     .welcome__img {
       max-width: 90%; }
       .welcome__img:nth-child(2n) {
@@ -815,6 +816,7 @@ body {
       padding-bottom: 13%; }
 
   .features {
+    width: 100%;
     position: relative; }
     .features-item__title {
       width: 90%;
@@ -829,17 +831,19 @@ body {
       min-height: 200px;
       padding: 10% 2%; }
     .features-item__img-container {
-      display: none;
       display: block;
       float: none;
       min-width: 320px;
+      max-width: 460px;
       height: 260px;
       overflow: hidden; }
     .features-item__img {
       display: block;
-      width: 162%;
+      width: 100%;
       height: auto;
       margin-left: -30px; }
+      .features-item__img-container {
+        width: 100%; }
     .features-item-small {
       display: block;
       width: 100%;
@@ -861,12 +865,13 @@ body {
         padding: 2%; }
     .features:before {
       position: absolute;
-      top: -37px;
+      top: -53px;
       left: 0;
       z-index: -1;
-      width: 100%;
-      height: 50px;
+      width: 460px;
+      height: 54px;
       background: #81b3d2 url("../img/bg-welcome-mask-mobile.png") no-repeat 50% 0;
+      background-size: 100%;
       content: ""; }
 
   .advantages__item {
@@ -912,7 +917,7 @@ body {
       background: url("../img/bg-visit-us-map.jpg") no-repeat 50% 102%; }
     .hotel-search__header {
       width: 100%;
-      padding-top: 6%; }
+      padding-top: 3%; }
       .hotel-search__header-title {
         font-size: 18px; }
     .hotel-search__form {
@@ -929,7 +934,7 @@ body {
           padding: 2%; }
         .hotel-search__form-field-input {
           float: left;
-          width: 265.6px;
+          width: 92.5%;
           margin: 0;
           padding: 0; }
           .hotel-search__form-field-input--number {
