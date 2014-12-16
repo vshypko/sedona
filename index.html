@@ -15,7 +15,7 @@
 				<ul class="mobile-menu">
 					<li class="mobile-menu__item">
 						<a class="mobile-menu__item-link" href="#">Карта штата</a>
-						<button class="mobile-menu__item-close">
+						<a class="mobile-menu__item-close" href="#">
 							<svg class="mobile-menu__item-close-svg" version="1.0" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
 								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.265px"
 								 height="22px" viewBox="-0.644 -30.093 21.265 22.262"
@@ -24,7 +24,7 @@
 							<polygon points="21.62,-10.605 13.263,-18.962 21.619,-27.318 18.845,-30.093 10.488,-21.737 2.132,-30.093 
 								-0.643,-27.318 7.714,-18.962 -0.644,-10.605 2.131,-7.831 10.488,-16.188 18.846,-7.831 "/>
 							</svg>
-						</button>
+						</a>
 					</li>
 					<li class="mobile-menu__item">
 						<a class="mobile-menu__item-link" href="#">Информация</a>
@@ -63,7 +63,7 @@
 						<a class="top-menu__item-link" href="#">Гостиницы</a>
 					</li>
 					<li class="top-menu__item top-menu__item-menu-open">
-						<button class="mobile-menu-open">
+						<a class="mobile-menu-open" href="#">
 							<svg class="mobile-menu__open-svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" id="Layer_1" x="0px" y="0px" width="22.264px" height="22.262px" viewBox="0 0 22.264 22.262" enable-background="new 0 0 0 0" xml:space="preserve">
 							<style>
 								.style0{
@@ -76,7 +76,7 @@
 							<title/>
 							<rect x="0" y="18.3" width="22.3" height="3.9" class="style0"/>
 							</svg>
-						</button>
+						</a>
 					</li>
 				</ul>
 			</nav>
@@ -423,7 +423,13 @@
 					<p class="features-item__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 				<div class="features-item__img-container">
-					<img src="img/bg-features-2.jpg" height="256" width="100%" alt="">
+					<picture class="features-item__img">
+						<source media="@media(min--moz-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 1.5dppx" srcset="img/bg-features-2-retina.jpg" height="256" width="100%" alt="">
+						<img src="img/bg-features-2.jpg" height="256" width="100%" alt="">
+					</picture>
 				</div>
 			<div class="features-item-small-container">
 				<section class="features-item-small">
@@ -455,49 +461,53 @@
 				<form class="hotel-search__form" action="#">
 					<div class="hotel-search__form-field">
 						<label class="hotel-search__form-field-label" for="dateIn">Дата заезда:</label>
-						<span class="hotel-search__form-calendar">
-							<svg class="hotel-search__form-calendar-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								 width="19.875px" height="21.916px" viewBox="0 0 19.875 21.916" enable-background="new 0 0 19.875 21.916" xml:space="preserve">
-							<g>
-								<path d="M17.04,2h-2.081V0h-2v2H6.917V0h-2v2H2.835C1.275,2,0,3.275,0,4.835v14.246c0,1.56,1.275,2.835,2.835,2.835H17.04
-									c1.56,0,2.835-1.275,2.835-2.835V4.835C19.875,3.275,18.6,2,17.04,2z M17.875,19.081c0,0.453-0.383,0.835-0.835,0.835H2.835
-									C2.383,19.916,2,19.534,2,19.081V4.835C2,4.382,2.383,4,2.835,4H17.04c0.452,0,0.835,0.382,0.835,0.835V19.081z"/>
-								<rect x="4.917" y="6.958" width="2" height="2"/>
-								<rect x="12.959" y="6.958" width="2" height="2"/>
-								<rect x="8.938" y="6.958" width="2" height="2"/>
-								<rect x="4.917" y="10.958" width="2" height="2"/>
-								<rect x="12.959" y="10.958" width="2" height="2"/>
-								<rect x="8.938" y="10.958" width="2" height="2"/>
-								<rect x="4.917" y="14.942" width="2" height="2"/>
-								<rect x="12.959" y="14.942" width="2" height="2"/>
-								<rect x="8.938" y="14.942" width="2" height="2"/>
-							</g>
-							</svg>
-						</span>
-						<input class="hotel-search__form-field-input hotel-search__form-field-input--date" type="text" name="dateIn" value="">
+						<div class="hotel-search__form--mobile">
+							<span class="hotel-search__form-calendar">
+								<svg class="hotel-search__form-calendar-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="19.875px" height="21.916px" viewBox="0 0 19.875 21.916" enable-background="new 0 0 19.875 21.916" xml:space="preserve">
+								<g>
+									<path d="M17.04,2h-2.081V0h-2v2H6.917V0h-2v2H2.835C1.275,2,0,3.275,0,4.835v14.246c0,1.56,1.275,2.835,2.835,2.835H17.04
+										c1.56,0,2.835-1.275,2.835-2.835V4.835C19.875,3.275,18.6,2,17.04,2z M17.875,19.081c0,0.453-0.383,0.835-0.835,0.835H2.835
+										C2.383,19.916,2,19.534,2,19.081V4.835C2,4.382,2.383,4,2.835,4H17.04c0.452,0,0.835,0.382,0.835,0.835V19.081z"/>
+									<rect x="4.917" y="6.958" width="2" height="2"/>
+									<rect x="12.959" y="6.958" width="2" height="2"/>
+									<rect x="8.938" y="6.958" width="2" height="2"/>
+									<rect x="4.917" y="10.958" width="2" height="2"/>
+									<rect x="12.959" y="10.958" width="2" height="2"/>
+									<rect x="8.938" y="10.958" width="2" height="2"/>
+									<rect x="4.917" y="14.942" width="2" height="2"/>
+									<rect x="12.959" y="14.942" width="2" height="2"/>
+									<rect x="8.938" y="14.942" width="2" height="2"/>
+								</g>
+								</svg>
+							</span>
+							<input class="hotel-search__form-field-input hotel-search__form-field-input--date" type="text" name="dateIn" value="">
+						</div>
 					</div>
 					<div class="hotel-search__form-field">
 						<label class="hotel-search__form-field-label" for="dateOut">Дата выезда:</label>
-						<span class="hotel-search__form-calendar">
-							<svg class="hotel-search__form-calendar-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								 width="19.875px" height="21.916px" viewBox="0 0 19.875 21.916" enable-background="new 0 0 19.875 21.916" xml:space="preserve">
-							<g>
-								<path d="M17.04,2h-2.081V0h-2v2H6.917V0h-2v2H2.835C1.275,2,0,3.275,0,4.835v14.246c0,1.56,1.275,2.835,2.835,2.835H17.04
-									c1.56,0,2.835-1.275,2.835-2.835V4.835C19.875,3.275,18.6,2,17.04,2z M17.875,19.081c0,0.453-0.383,0.835-0.835,0.835H2.835
-									C2.383,19.916,2,19.534,2,19.081V4.835C2,4.382,2.383,4,2.835,4H17.04c0.452,0,0.835,0.382,0.835,0.835V19.081z"/>
-								<rect x="4.917" y="6.958" width="2" height="2"/>
-								<rect x="12.959" y="6.958" width="2" height="2"/>
-								<rect x="8.938" y="6.958" width="2" height="2"/>
-								<rect x="4.917" y="10.958" width="2" height="2"/>
-								<rect x="12.959" y="10.958" width="2" height="2"/>
-								<rect x="8.938" y="10.958" width="2" height="2"/>
-								<rect x="4.917" y="14.942" width="2" height="2"/>
-								<rect x="12.959" y="14.942" width="2" height="2"/>
-								<rect x="8.938" y="14.942" width="2" height="2"/>
-							</g>
-							</svg>
-						</span>
-						<input class="hotel-search__form-field-input hotel-search__form-field-input--date" type="text" name="dateOut">
+						<div class="hotel-search__form--mobile">
+							<span class="hotel-search__form-calendar">
+								<svg class="hotel-search__form-calendar-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="19.875px" height="21.916px" viewBox="0 0 19.875 21.916" enable-background="new 0 0 19.875 21.916" xml:space="preserve">
+								<g>
+									<path d="M17.04,2h-2.081V0h-2v2H6.917V0h-2v2H2.835C1.275,2,0,3.275,0,4.835v14.246c0,1.56,1.275,2.835,2.835,2.835H17.04
+										c1.56,0,2.835-1.275,2.835-2.835V4.835C19.875,3.275,18.6,2,17.04,2z M17.875,19.081c0,0.453-0.383,0.835-0.835,0.835H2.835
+										C2.383,19.916,2,19.534,2,19.081V4.835C2,4.382,2.383,4,2.835,4H17.04c0.452,0,0.835,0.382,0.835,0.835V19.081z"/>
+									<rect x="4.917" y="6.958" width="2" height="2"/>
+									<rect x="12.959" y="6.958" width="2" height="2"/>
+									<rect x="8.938" y="6.958" width="2" height="2"/>
+									<rect x="4.917" y="10.958" width="2" height="2"/>
+									<rect x="12.959" y="10.958" width="2" height="2"/>
+									<rect x="8.938" y="10.958" width="2" height="2"/>
+									<rect x="4.917" y="14.942" width="2" height="2"/>
+									<rect x="12.959" y="14.942" width="2" height="2"/>
+									<rect x="8.938" y="14.942" width="2" height="2"/>
+								</g>
+								</svg>
+							</span>
+							<input class="hotel-search__form-field-input hotel-search__form-field-input--date" type="text" name="dateOut">
+						</div>
 					</div>
 					<div class="hotel-search__form-field">
 						<div class="hotel-search__form-field-container">

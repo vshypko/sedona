@@ -432,7 +432,7 @@ body {
   position: relative;
   z-index: -1;
   max-width: 100%;
-  background: #fff url("../img/bg-welcome.jpg") no-repeat 50% -56px; }
+  background: #fff url("../img/bg-welcome.jpg") no-repeat 50% -66px; }
   .welcome__img {
     display: block;
     max-width: 100%;
@@ -840,8 +840,7 @@ body {
     .features-item__img {
       display: block;
       width: 100%;
-      height: auto;
-      margin-left: -30px; }
+      height: auto; }
       .features-item__img-container {
         width: 100%; }
     .features-item-small {
@@ -925,7 +924,15 @@ body {
       min-height: 415px;
       padding: 2%;
       box-shadow: none; }
+      .hotel-search__form-calendar {
+        float: none;
+        display: inline-block;
+        height: 28px;
+        background-color: #f2f2f2; }
+      .hotel-search__form--mobile {
+        width: 100%; }
       .hotel-search__form-field {
+        margin: 0;
         padding: 2%;
         padding-right: 5%; }
         .hotel-search__form-field-label {
@@ -934,7 +941,7 @@ body {
           padding: 2%; }
         .hotel-search__form-field-input {
           float: left;
-          width: 92.5%;
+          width: 89%;
           margin: 0;
           padding: 0; }
           .hotel-search__form-field-input--number {

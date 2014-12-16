@@ -134,7 +134,7 @@ body {
 	position: relative;
 	z-index: -1;
 	max-width: 100%;
-	background: $page-header-bg url("../img/bg-welcome.jpg") no-repeat 50% -56px;
+	background: $page-header-bg url("../img/bg-welcome.jpg") no-repeat 50% -66px;
 	&__img {
 		display: block;
 		max-width: 100%;
@@ -665,7 +665,6 @@ body {
 				display: block;
 				width: 100%;
 				height: auto;
-				margin-left: -30px;
 				&-container {
 					width: 100%;
 				}
@@ -769,7 +768,17 @@ body {
 			min-height: 415px;
 			padding: 2%;
 			box-shadow: none;
+			&-calendar {
+				float: none;
+				display: inline-block;
+				height: 28px;
+				background-color: $hotel-search-form-input-color;
+			}
+			&--mobile {
+				width: 100%;
+			}
 			&-field {
+				margin: 0;
 				padding: 2%;
 				padding-right: 5%;
 				&-label {
@@ -779,7 +788,7 @@ body {
 				}
 				&-input {
 					float: left;
-					width: 92.5%;
+					width: 89%;
 					margin: 0;
 					padding: 0;
 					&--number {
