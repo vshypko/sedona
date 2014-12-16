@@ -1,0 +1,993 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+	 ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden], template {
+  display: none; }
+
+/* Links
+	 ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+	 ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+	 ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.86em;
+  text-transform: uppercase; }
+
+.wrapper {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.mobile-menu-container {
+  display: block;
+  width: 100%; }
+  .mobile-menu-container .mobile-menu__item {
+    display: none;
+    padding: 1%;
+    text-align: center;
+    background-color: #81b3d2;
+    border-bottom: 1px solid #678fa8; }
+    .mobile-menu-container .mobile-menu__item-link {
+      font-size: 1.29em;
+      line-height: 2.86em;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase; }
+    .mobile-menu-container .mobile-menu__item-close {
+      float: right; }
+      .mobile-menu-container .mobile-menu__item-close-svg {
+        float: right;
+        margin-top: 12px;
+        background-color: #81b3d2;
+        fill: #fff; }
+    .mobile-menu-container .mobile-menu__item__open-svg {
+      fill: #81b3d2; }
+    .mobile-menu-container .mobile-menu__item:hover {
+      background-color: #669ec0; }
+    .mobile-menu-container .mobile-menu__item:active {
+      color: #94b9d2;
+      background-color: #5496bd; }
+    .mobile-menu-container .mobile-menu__item:first-child {
+      padding-left: 40px; }
+
+.page-header {
+  height: 56px;
+  background-color: #fff; }
+
+.top-menu {
+  position: relative;
+  min-height: 50px;
+  padding: 1.3% 0;
+  font-size: 0;
+  list-style: none; }
+  .top-menu__item {
+    display: inline-block;
+    width: 20%;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: bottom; }
+    .top-menu__item-link {
+      color: #000;
+      text-decoration: none; }
+      .top-menu__item-link:hover {
+        color: #81b3d2; }
+      .top-menu__item-link:active {
+        color: #766357; }
+    .top-menu__item-menu-open {
+      display: none; }
+  .top-menu__logo-link {
+    position: absolute;
+    top: 0;
+    left: 44.2%; }
+  .top-menu__logo-img {
+    position: absolute;
+    top: 0;
+    left: 34px; }
+  .top-menu__triangle-svg {
+    fill: #81b3d2; }
+
+.welcome {
+  position: relative;
+  z-index: -1;
+  max-width: 100%;
+  background: #fff url("../img/bg-welcome.jpg") no-repeat 50% -66px; }
+  .welcome__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 54px; }
+    .welcome__img:first-child {
+      padding-top: 75px;
+      fill: #81b3d2; }
+    .welcome__img:nth-child(2) {
+      padding-top: 5px;
+      fill: #766357; }
+    .welcome__img:nth-child(3), .welcome__img:nth-child(4) {
+      fill: #fff; }
+  .welcome__info {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 4%;
+    font-size: 1.5em;
+    text-align: center; }
+  .welcome__reasons {
+    padding: 1%;
+    padding-top: 3%;
+    color: #333;
+    text-align: center; }
+  .welcome-container {
+    position: relative;
+    max-width: 1200px;
+    min-height: 200px;
+    margin-top: 85px;
+    padding-top: 10px;
+    background-color: #fff; }
+    .welcome-container:before {
+      position: absolute;
+      top: -56px;
+      left: 0;
+      width: 100%;
+      height: 65px;
+      background: url("../img/bg-welcome-mask.png") no-repeat 50% 0;
+      content: ""; }
+
+.features {
+  background-color: #fff; }
+  .features-item {
+    min-height: 256px; }
+    .features-item-container {
+      float: left;
+      width: 33%;
+      min-height: 256px;
+      box-sizing: border-box;
+      padding: 4% 5%;
+      color: #fff;
+      text-align: center;
+      background-color: #81b3d2; }
+    .features-item__title {
+      width: 152px;
+      margin: 0 auto;
+      padding: 2%;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-align: center; }
+    .features-item__number {
+      padding: 3%;
+      line-height: 1.5em; }
+    .features-item__description {
+      padding: 3%;
+      line-height: 1.5em; }
+    .features-item__img-container {
+      float: right;
+      width: 67%;
+      height: 256px;
+      box-sizing: border-box; }
+    .features-item--image-left .features-item-container {
+      float: right; }
+    .features-item-small-container {
+      min-height: 250px;
+      margin: 0;
+      font-size: 0;
+      background-color: #eee; }
+    .features-item-small {
+      display: inline-block;
+      width: 33.333%;
+      min-height: 250px;
+      box-sizing: border-box;
+      padding: 3% 2%;
+      font-size: 14px;
+      text-align: center;
+      vertical-align: middle; }
+      .features-item-small__title {
+        width: 45%;
+        margin: 0 auto;
+        padding: 2%;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center; }
+      .features-item-small__number {
+        padding: 3%;
+        line-height: 1.5em; }
+      .features-item-small__description {
+        max-width: 100%;
+        padding: 3%;
+        line-height: 1.5em; }
+
+.advantages {
+  min-height: 265px;
+  margin: 35px 0; }
+  .advantages__item {
+    display: inline-block;
+    width: 33.3333%;
+    min-height: 200px;
+    margin: -2px;
+    padding: 30px 0;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff; }
+    .advantages__item-title {
+      padding: 4%;
+      font-size: 1.5em;
+      font-weight: bold; }
+    .advantages__item-description {
+      max-width: 80%;
+      margin: 0 auto;
+      line-height: 1.5em;
+      text-align: center; }
+    .advantages__item-svg {
+      fill: #81b3d2; }
+
+.visit-us {
+  min-height: 250px;
+  padding: 1%;
+  padding-top: 25px; }
+  .visit-us__title {
+    padding: 2%;
+    font-size: 2.14em;
+    font-weight: bold;
+    text-align: center; }
+  .visit-us__info {
+    width: 45%;
+    margin: 0 auto;
+    padding: 0 3%;
+    line-height: 24px;
+    text-align: center; }
+
+.hotel-search {
+  position: absolute;
+  top: -122px;
+  left: 1%;
+  width: 100%;
+  height: 100%;
+  margin-top: 48px; }
+  .hotel-search-container {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    background: url("../img/bg-visit-us-map.jpg") no-repeat 50% 50%; }
+  .hotel-search__header {
+    max-width: 571px;
+    height: 62px;
+    margin: 0 auto;
+    padding: 1% 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background-color: #766357; }
+    .hotel-search__header-title {
+      padding: 4%; }
+  .hotel-search__form {
+    width: 470px;
+    height: 290px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #333; }
+    .hotel-search__form-field {
+      margin-bottom: 45px; }
+      .hotel-search__form-field-container {
+        display: inline-block;
+        width: 233px;
+        vertical-align: middle; }
+      .hotel-search__form-field-label {
+        font-weight: bold; }
+        .hotel-search__form-field-label--children {
+          margin-left: 25px;
+          font-weight: bold; }
+      .hotel-search__form-field-input {
+        position: relative;
+        width: 60%;
+        height: 38px;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        background-color: #f2f2f2;
+        border: none; }
+        .hotel-search__form-field-input:hover {
+          background-color: #ebebeb; }
+        .hotel-search__form-field-input:focus {
+          background-color: #fff;
+          outline: 2px solid #e5e5e5; }
+        .hotel-search__form-field-input--date {
+          float: right;
+          width: 300px;
+          padding: 0 1%;
+          text-align: left; }
+        .hotel-search__form-field-input--number {
+          display: inline-block;
+          width: 36px;
+          height: 36px; }
+          .hotel-search__form-field-input--number-container {
+            float: right; }
+            .hotel-search__form-field-input--number-container-minus {
+              float: left;
+              width: 11px;
+              height: 31px;
+              padding: 4px 10px 3px;
+              background-color: #f2f2f2; }
+            .hotel-search__form-field-input--number-container-plus {
+              float: right;
+              width: 11px;
+              height: 28px;
+              padding: 7px 10px 3px;
+              background-color: #f2f2f2; }
+      .hotel-search__form-field:nth-child(3) label:first-child {
+        margin-right: 36px; }
+      .hotel-search__form-field:nth-child(3) label:nth-child(3) {
+        margin-right: 8px; }
+      .hotel-search__form-field:nth-child(3) input {
+        width: 47px; }
+    .hotel-search__form-submit {
+      width: 100%;
+      height: 60px;
+      margin-top: 10px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #81b3d2;
+      border: 0; }
+      .hotel-search__form-submit:hover {
+        background-color: #669ec0; }
+      .hotel-search__form-submit:active {
+        color: #94b9d2;
+        background-color: #5496bd; }
+    .hotel-search__form-calendar {
+      float: right;
+      width: 13px;
+      height: 28px;
+      padding: 7px 12px 3px 7px;
+      background-color: #f2f2f2; }
+    .hotel-search__form-minus-svg, .hotel-search__form-plus-svg, .hotel-search__form-calendar-svg {
+      fill: #b2b2b2; }
+      .hotel-search__form-minus-svg:hover, .hotel-search__form-plus-svg:hover, .hotel-search__form-calendar-svg:hover {
+        fill: #000; }
+      .hotel-search__form-minus-svg:active, .hotel-search__form-plus-svg:active, .hotel-search__form-calendar-svg:active {
+        fill: #81b3d2; }
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-width: 650px;
+  min-height: 50px;
+  box-sizing: border-box;
+  padding: 35px 2%;
+  font-size: 0;
+  background-color: rgba(255, 255, 255, 0.9); }
+  .page-footer .twitter-tag {
+    display: inline-block;
+    width: 33%;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: bottom; }
+  .page-footer .social-icons {
+    display: inline-block;
+    width: 33%;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: bottom; }
+    .page-footer .social-icons__svg {
+      fill: #fff; }
+      .page-footer .social-icons__svg:active {
+        fill: #88b6d1; }
+    .page-footer .social-icons__item-link-img {
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      padding: 12px;
+      vertical-align: bottom;
+      background-color: #81b3d2; }
+      .page-footer .social-icons__item-link-img:hover {
+        background-color: #669ec0; }
+      .page-footer .social-icons__item-link-img:active {
+        background-color: #5496bd; }
+  .page-footer .copyright {
+    display: inline-block;
+    width: 33%;
+    min-width: 190px;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle; }
+    .page-footer .copyright__by-img, .page-footer .copyright__for-img {
+      display: inline-block;
+      width: 30px;
+      height: 32px;
+      margin-top: 15px;
+      vertical-align: bottom; }
+    .page-footer .copyright__by:hover {
+      fill: #81b3d2; }
+    .page-footer .copyright__by:active {
+      fill: #bdbbbc; }
+    .page-footer .copyright__for:hover {
+      fill: #81b3d2; }
+    .page-footer .copyright__for:active {
+      fill: #bdbbbc; }
+
+@media (max-width: 768px) {
+  .top-menu {
+    box-sizing: border-box;
+    padding: 2% 0; }
+    .top-menu__item {
+      vertical-align: bottom; }
+    .top-menu__logo-link {
+      position: absolute;
+      top: 0;
+      left: 41%; }
+
+  .welcome-container:before {
+    top: -36px;
+    background: url("../img/bg-welcome-mask-tablet.png") no-repeat 50% 0; }
+
+  .advantages__item-description {
+    width: 65%; }
+
+  .features-item-small {
+    padding: 5% 0; }
+
+  .visit-us {
+    padding-top: 20px; }
+ }
+
+@media (max-width: 460px) {
+  .top-menu {
+    background-color: #fff; }
+    .top-menu__item {
+      display: none; }
+      .top-menu__item:nth-child(3) {
+        display: block; }
+      .top-menu__item-menu-open {
+        margin-top: 8px;
+        display: block;
+        float: right; }
+    .top-menu__logo-link {
+      left: 30%;
+      display: block; }
+
+  .welcome {
+    width: auto;
+    background: url("../img/bg-welcome.jpg") no-repeat 50% -62px; }
+    .welcome-container {
+      max-width: 460px;
+      min-width: 320px;
+      margin-top: 50px; }
+      .welcome-container:before {
+        top: -36px;
+        background: url("../img/bg-welcome-mask-tablet.png") no-repeat 50% 0; }
+    .welcome__img {
+      max-width: 90%; }
+      .welcome__img:nth-child(2n) {
+        max-width: 70%; }
+      .welcome__img:nth-child(1) {
+        max-width: 50%; }
+    .welcome__info {
+      padding: 4% 8%;
+      padding-top: 7%;
+      font-size: 1.29em;
+      font-weight: bold;
+      line-height: 1.6em; }
+    .welcome__reasons {
+      padding: 4% 5%;
+      padding-bottom: 13%; }
+
+  .features {
+    width: 100%;
+    position: relative; }
+    .features-item__title {
+      width: 90%;
+      padding: 1%;
+      font-size: 1.29em; }
+    .features-item__description {
+      padding: 2.5% 2%; }
+    .features-item-container {
+      display: block;
+      float: none;
+      width: 100%;
+      min-height: 200px;
+      padding: 10% 2%; }
+    .features-item__img-container {
+      display: block;
+      float: none;
+      min-width: 320px;
+      max-width: 460px;
+      height: 260px;
+      overflow: hidden; }
+    .features-item__img {
+      display: block;
+      width: 100%;
+      height: auto; }
+      .features-item__img-container {
+        width: 100%; }
+    .features-item-small {
+      display: block;
+      width: 100%;
+      min-height: 50px;
+      padding: 6%;
+      border-bottom: 1px solid #ddd; }
+      .features-item-small:last-child {
+        border: none; }
+      .features-item-small-container {
+        display: block;
+        padding: 6% 8%; }
+      .features-item-small__title {
+        width: 90%;
+        padding: 0;
+        font-size: 1.29em; }
+      .features-item-small__number {
+        padding: 5%; }
+      .features-item-small__description {
+        padding: 2%; }
+    .features:before {
+      position: absolute;
+      top: -53px;
+      left: 0;
+      z-index: -1;
+      width: 460px;
+      height: 54px;
+      background: #81b3d2 url("../img/bg-welcome-mask-mobile.png") no-repeat 50% 0;
+      background-size: 100%;
+      content: ""; }
+
+  .advantages__item {
+    display: block;
+    width: 100%;
+    min-height: 90px;
+    padding: 3%; }
+    .advantages__item-svg {
+      float: left;
+      width: 37px;
+      height: 37px;
+      padding: 1%; }
+    .advantages__item-title {
+      display: inline-block;
+      width: 80%;
+      padding: 1%;
+      padding-bottom: 2%;
+      font-size: 1.29em;
+      text-align: left; }
+    .advantages__item-description {
+      width: 65%;
+      margin-left: 49px;
+      padding: 1%;
+      color: #333;
+      text-align: left; }
+
+  .visit-us {
+    min-height: 210px;
+    padding-top: 30px; }
+    .visit-us__title {
+      padding: 3%;
+      font-size: 1.5em; }
+    .visit-us__info {
+      width: 90%;
+      padding: 2%; }
+
+  .hotel-search {
+    overflow: hidden;
+    margin-left: -3px;
+    padding: 0; }
+    .hotel-search-container {
+      min-height: 1030px;
+      background: url("../img/bg-visit-us-map.jpg") no-repeat 50% 102%; }
+    .hotel-search__header {
+      width: 100%;
+      padding-top: 3%; }
+      .hotel-search__header-title {
+        font-size: 18px; }
+    .hotel-search__form {
+      width: 100%;
+      min-height: 415px;
+      padding: 2%;
+      box-shadow: none; }
+      .hotel-search__form-calendar {
+        float: none;
+        display: inline-block;
+        height: 28px;
+        background-color: #f2f2f2; }
+      .hotel-search__form--mobile {
+        width: 100%; }
+      .hotel-search__form-field {
+        margin: 0;
+        padding: 2%;
+        padding-right: 5%; }
+        .hotel-search__form-field-label {
+          display: block;
+          margin: 0;
+          padding: 2%; }
+        .hotel-search__form-field-input {
+          float: left;
+          width: 89%;
+          margin: 0;
+          padding: 0; }
+          .hotel-search__form-field-input--number {
+            height: 38px;
+            margin-left: -2px; }
+            .hotel-search__form-field-input--number-container {
+              width: 75%;
+              margin: 0; }
+              .hotel-search__form-field-input--number-container-plus {
+                float: left; }
+              .hotel-search__form-field-input--number-container-minus {
+                margin-left: -33px; }
+        .hotel-search__form-field-container {
+          width: 50%;
+          padding-bottom: 10%; }
+          .hotel-search__form-field-container:first-child {
+            float: left; }
+          .hotel-search__form-field-container:last-child {
+            float: right; }
+      .hotel-search__form-submit {
+        width: 95%;
+        margin: 0;
+        margin: 0 auto; }
+
+  .page-footer {
+    min-width: 320px;
+    box-sizing: border-box;
+    padding: 8% 6%; }
+    .page-footer .twitter-tag {
+      display: block;
+      width: 70%;
+      margin: 0 auto; }
+    .page-footer .social-icons {
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+      padding: 30px 0; }
+    .page-footer .copyright {
+      display: block;
+      width: 70%;
+      margin: 0 auto; }
+ }
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .welcome {
+    background: #fff url("../img/bg-welcome-retina.jpg") no-repeat 50% -8px;
+    background-size: 99.9%; }
+ }
