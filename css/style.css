@@ -354,12 +354,14 @@ body {
 
 .wrapper {
   max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto; }
 
 .mobile-menu-container {
-  display: none;
+  display: block;
   width: 100%; }
   .mobile-menu-container .mobile-menu__item {
+    display: none;
     padding: 1%;
     text-align: center;
     background-color: #81b3d2;
@@ -371,13 +373,21 @@ body {
       text-decoration: none;
       text-transform: uppercase; }
     .mobile-menu-container .mobile-menu__item-close {
-      display: none;
       float: right; }
+      .mobile-menu-container .mobile-menu__item-close-svg {
+        float: right;
+        fill: #fff;
+        margin-top: 12px;
+        background-color: #81b3d2; }
+    .mobile-menu-container .mobile-menu__item__open-svg {
+      fill: #81b3d2; }
     .mobile-menu-container .mobile-menu__item:hover {
       background-color: #669ec0; }
     .mobile-menu-container .mobile-menu__item:active {
       color: #94b9d2;
       background-color: #5496bd; }
+    .mobile-menu-container .mobile-menu__item:first-child {
+      padding-left: 40px; }
 
 .page-header {
   height: 56px;
@@ -408,10 +418,13 @@ body {
     .top-menu__item-menu-open {
       display: none; }
   .top-menu__logo-link {
-    background: url("../img/logo-sedona-1x.png") 50% 0 no-repeat;
     position: absolute;
     top: 0;
     left: 44.2%; }
+  .top-menu__logo-img {
+    position: absolute;
+    top: 0;
+    left: 34px; }
   .top-menu__triangle-svg {
     fill: #81b3d2; }
 
@@ -447,7 +460,7 @@ body {
     text-align: center; }
   .welcome-container {
     position: relative;
-    max-width: 100%;
+    max-width: 1200px;
     min-height: 200px;
     margin-top: 85px;
     padding-top: 10px;
@@ -487,12 +500,12 @@ body {
     .features-item__description {
       padding: 3%;
       line-height: 1.5em; }
-    .features-item__img {
-      width: 100%;
-      box-sizing: border-box; }
-      .features-item__img-container {
-        float: right;
-        width: 67%; }
+    .features-item__img-container {
+      box-sizing: border-box;
+      float: right;
+      width: 67%;
+      height: 256px;
+      background: url("../img/bg-features-2.jpg") 0 0 no-repeat; }
     .features-item--image-left .features-item-container {
       float: right; }
     .features-item-small-container {
@@ -733,6 +746,10 @@ body {
       fill: #81b3d2; }
     .page-footer .copyright__by:active {
       fill: #bdbbbc; }
+    .page-footer .copyright__for:hover {
+      fill: #81b3d2; }
+    .page-footer .copyright__for:active {
+      fill: #bdbbbc; }
 
 @media (max-width: 768px) {
   .top-menu {
@@ -773,26 +790,20 @@ body {
       left: 30%;
       display: block; }
 
-  .mobile-menu-open-img {
-    fill: blue; }
-
   .welcome {
     background: url("../img/bg-welcome.jpg") no-repeat 50% -62px; }
     .welcome-container {
+      width: 320px;
       margin-top: 50px; }
       .welcome-container:before {
         top: -36px;
-        background: url("../img/bg-welcome-mask-tablet.png") no-repeat 50% 0; }
-    .welcome__img:nth-child(1) {
-      width: 200px;
-      padding-top: 45px; }
-    .welcome__img:nth-child(2) {
-      width: 280px;
-      padding-top: 60px; }
-    .welcome__img:nth-child(3) {
-      width: 200px;
-      padding-top: 70px;
-      padding-bottom: 0; }
+        background: url("../img/bg-welcome-mask-tablet.png") no-repeat -220px 0; }
+    .welcome__img {
+      max-width: 90%; }
+      .welcome__img:nth-child(2n) {
+        max-width: 70%; }
+      .welcome__img:nth-child(1) {
+        max-width: 50%; }
     .welcome__info {
       padding: 4% 8%;
       padding-top: 7%;
@@ -863,7 +874,7 @@ body {
     width: 100%;
     min-height: 90px;
     padding: 3%; }
-    .advantages__item-img {
+    .advantages__item-svg {
       float: left;
       width: 37px;
       height: 37px;
@@ -907,26 +918,30 @@ body {
     .hotel-search__form {
       width: 100%;
       min-height: 415px;
-      padding: 3%;
+      padding: 2%;
       box-shadow: none; }
       .hotel-search__form-field {
-        padding: 2% 0; }
+        padding: 2%;
+        padding-right: 5%; }
         .hotel-search__form-field-label {
           display: block;
           margin: 0;
           padding: 2%; }
         .hotel-search__form-field-input {
           float: left;
-          width: 93%;
+          width: 265.6px;
           margin: 0;
           padding: 0; }
           .hotel-search__form-field-input--number {
-            min-height: 39px; }
+            height: 38px;
+            margin-left: -2px; }
             .hotel-search__form-field-input--number-container {
               width: 75%;
               margin: 0; }
               .hotel-search__form-field-input--number-container-plus {
                 float: left; }
+              .hotel-search__form-field-input--number-container-minus {
+                margin-left: -33px; }
         .hotel-search__form-field-container {
           width: 50%;
           padding-bottom: 10%; }
@@ -935,7 +950,7 @@ body {
           .hotel-search__form-field-container:last-child {
             float: right; }
       .hotel-search__form-submit {
-        width: 90%;
+        width: 95%;
         margin: 0;
         margin: 0 auto; }
 
@@ -956,4 +971,10 @@ body {
       display: block;
       width: 70%;
       margin: 0 auto; }
+ }
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .welcome {
+    background: #fff url("../img/bg-welcome-retina.jpg") no-repeat 50% -8px;
+    background-size: 99.9%; }
  }
