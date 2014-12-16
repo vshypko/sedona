@@ -783,6 +783,7 @@ body {
       .top-menu__item:nth-child(3) {
         display: block; }
       .top-menu__item-menu-open {
+        margin-top: 8px;
         display: block;
         float: right; }
     .top-menu__logo-link {
