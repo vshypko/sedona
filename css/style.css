@@ -353,8 +353,8 @@ body {
   text-transform: uppercase; }
 
 .wrapper {
-  max-width: 1200px;
   min-width: 320px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .mobile-menu-container {
@@ -376,9 +376,9 @@ body {
       float: right; }
       .mobile-menu-container .mobile-menu__item-close-svg {
         float: right;
-        fill: #fff;
         margin-top: 12px;
-        background-color: #81b3d2; }
+        background-color: #81b3d2;
+        fill: #fff; }
     .mobile-menu-container .mobile-menu__item__open-svg {
       fill: #81b3d2; }
     .mobile-menu-container .mobile-menu__item:hover {
@@ -501,10 +501,10 @@ body {
       padding: 3%;
       line-height: 1.5em; }
     .features-item__img-container {
-      box-sizing: border-box;
       float: right;
       width: 67%;
       height: 256px;
+      box-sizing: border-box;
       background: url("../img/bg-features-2.jpg") 0 0 no-repeat; }
     .features-item--image-left .features-item-container {
       float: right; }
@@ -612,8 +612,8 @@ body {
       margin-bottom: 45px; }
       .hotel-search__form-field-container {
         display: inline-block;
-        vertical-align: middle;
-        width: 233px; }
+        width: 233px;
+        vertical-align: middle; }
       .hotel-search__form-field-label {
         font-weight: bold; }
         .hotel-search__form-field-label--children {
@@ -634,10 +634,10 @@ body {
           background-color: #fff;
           outline: 2px solid #e5e5e5; }
         .hotel-search__form-field-input--date {
+          float: right;
           width: 300px;
           padding: 0 1%;
-          text-align: left;
-          float: right; }
+          text-align: left; }
         .hotel-search__form-field-input--number {
           display: inline-block;
           width: 36px;
@@ -722,9 +722,9 @@ body {
       display: inline-block;
       width: 21px;
       height: 21px;
+      padding: 12px;
       vertical-align: bottom;
-      background-color: #81b3d2;
-      padding: 12px; }
+      background-color: #81b3d2; }
       .page-footer .social-icons__item-link-img:hover {
         background-color: #669ec0; }
       .page-footer .social-icons__item-link-img:active {
