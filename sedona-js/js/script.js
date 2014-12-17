@@ -5,22 +5,25 @@
 	var input = document.querySelectorAll(".counter-input");
 
 	for (var i = 0; i < plus.length; i++) {
-		plus[i].addEventListener("click", function(event, i) {
+
+		plus[i].addEventListener("click", function(event) {
 			event.preventDefault();
-			if (parseInt(input[0].value) >= 0) {
-				input[0].value = parseInt(input[0].value) + 1;
+			var inputer = this.parentNode.querySelector(".counter-input");
+
+			if (parseInt(inputer.value) >= 0) {
+				inputer.value = parseInt(inputer.value) + 1;
 			}
 			else {
 				return false;
 			}
 		});
-	}
 
-	for (var i = 0; i < minus.length; i++) {
-		minus[i].addEventListener("click", function(event, i) {
+		minus[i].addEventListener("click", function(event) {
 			event.preventDefault();
-			if (parseInt(input[0].value) > 0) {
-				input[0].value = parseInt(input[0].value) - 1;
+			var inputer = this.parentNode.querySelector(".counter-input");
+
+			if (parseInt(inputer.value) > 0) {
+				inputer.value = parseInt(inputer.value) - 1;
 			}
 			else {
 				return false;
